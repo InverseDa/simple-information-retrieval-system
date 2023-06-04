@@ -23,7 +23,7 @@ sudo apt install golang-1.19 nodejs npm python3 pip
 ```
 For Arch/Manjaro:
 ```
-sudo pacman -S golang nodejs npm python3 pip
+sudo pacman -S go nodejs npm python3 python3-pip
 ```
 For MacOS:
 ```
