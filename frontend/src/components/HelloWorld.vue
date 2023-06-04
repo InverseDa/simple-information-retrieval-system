@@ -5,7 +5,8 @@
                     placeholder="请输入要搜索的东西~"
                     size="large"
                     :loading="is_loading"
-                    enter-button/>
+                    enter-button
+                    @search="searching"/>
   </div>
 </template>
 
@@ -13,8 +14,22 @@
 import {ref} from 'vue'
 import axios from 'axios'
 const search_value = ref('')
-const is_loading = false
-axios.defaults.baseURL = 'http://' + window.location.hostname + ':8000'
+const is_loading = ref(false)
+
+const searching = () => {
+  is_loading.value = true
+  axios.post('http://localhost:8888/api/query', {
+    query: search_value.value
+  })
+    .then(res => {
+      console.log(res)
+      is_loading.value = false
+    })
+    .catch(err => {
+      console.log(err)
+      is_loading.value = false
+    })
+}
 
 </script>
 

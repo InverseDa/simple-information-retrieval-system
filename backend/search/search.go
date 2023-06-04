@@ -73,3 +73,11 @@ func (s *SearchEngine) ReadFile(pagesDir string) {
 		fmt.Println("Failed to readpages directory:", err)
 	}
 }
+
+func InitializeSearchEngine(pagesDir string) *SearchEngine {
+	dir, _ := os.Getwd()
+	se := SearchEngine{}
+	se.ReadFile(dir + pagesDir)
+	se.BuildInvertedIndex()
+	return &se
+}

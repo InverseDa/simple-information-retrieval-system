@@ -31,7 +31,7 @@ sudo pacman -S go nodejs npm python3 python3-pip
 ```
 For MacOS:
 ```
-brew install golang nodejs npm python pip
+brew install golang nodejs npm python
 ```
 ### 2.  Run Frontend
 Direct to frontend project directory
