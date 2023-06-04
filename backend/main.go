@@ -39,9 +39,14 @@ func main() {
 		fmt.Println("[Log] var query: ", data.Query)
 
 		results := se.Search(data.Query)
-		ret := []string{}
+		ret := []map[string]interface{}{}
 		for _, id := range results {
-			ret = append(ret, se.Docs[id])
+			fmt.Println("[Log] var Docs: ", se.Docs[id])
+			title := search.FindArticleDetails(se.Docs[id])
+			ret = append(ret, map[string]interface{}{
+				"content": se.Docs[id],
+				"title":   title,
+			})
 		}
 
 		fmt.Println("[Log] var data.Strings length: ", len(ret))

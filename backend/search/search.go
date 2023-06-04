@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"os"
 	"path/filepath"
+	"unicode/utf8"
 
 	"github.com/yanyiwu/gojieba"
 )
@@ -80,4 +81,24 @@ func InitializeSearchEngine(pagesDir string) *SearchEngine {
 	se.ReadFile(dir + pagesDir)
 	se.BuildInvertedIndex()
 	return &se
+}
+
+func FindArticleDetails(article string) string {
+	title := ""
+	for i := 0; i < len(article); {
+		r, size := utf8.DecodeRuneInString(article[i:])
+		if r == utf8.RuneError && size == 1 {
+			// 如果解码失败，则将该字符视为乱码
+			title += "?"
+			i++
+		} else {
+			title += string(r)
+			fmt.Println("[Log] var title: ", title)
+			i += size
+		}
+		if r == '\n' {
+			break
+		}
+	}
+	return title
 }
