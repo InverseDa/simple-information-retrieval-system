@@ -17,7 +17,7 @@ const router = useRouter()
 
 const searching = () => {
   is_loading.value = true
-  router.push({ name: 'Result', params: { query: JSON.stringify(search_value.value) } })
+  router.push({ name: 'Result', params: { query: search_value.value } })
 }
 
 </script>
