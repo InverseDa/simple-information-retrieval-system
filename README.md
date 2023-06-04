@@ -30,9 +30,10 @@ For MacOS:
 brew install golang nodejs npm python pip
 ```
 ### 2.  Run Frontend
-Direct to frontend project directory:
+Direct to frontend project directory
 ```
 cd ./frontend
+npm install
 ``` 
 Compiles and hot-reloads for development
 ```
@@ -47,15 +48,15 @@ Lints and fixes files
 npm run lint
 ```
 ### 3.  Run Backend
-Direct to frontend project directory:
+Direct to frontend project directory
 ```
 cd ./backend
 ```
-Before run the backend, you need to install Gin:
+Before run the backend, you need to install Gin
 ```
 go get -u github.com/spf13/viper
 ```
-Now you can run Gin:
+Now you can run Gin
 ```
 go run main.go
 ```

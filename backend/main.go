@@ -6,20 +6,23 @@ import (
 	"information/global"
 	"information/search"
 	"net/http"
+	"os"
 
 	"github.com/gin-gonic/gin"
 )
 
 func main() {
 	// 初始化配置
+	dir, _ := os.Getwd()
 	se := search.SearchEngine{}
-	se.ReadFile("/home/miaokeda/Information/backend/pages")
+	se.ReadFile(dir + "/pages")
 	se.BuildInvertedIndex()
 	results := se.Search("核酸")
 	fmt.Println("Search results for query", "粤海校区")
 	for _, id := range results {
 		fmt.Println("Document ID:", id, "Document content:", se.Docs[id])
 	}
+	// end
 	bootstrap.InitializeConfig()
 
 	r := gin.Default()
