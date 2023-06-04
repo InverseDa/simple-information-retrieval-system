@@ -10,10 +10,9 @@ A simple information retrieval system for the 40th Anniversary of Shenzhen Unive
 ## How to deploy this project?
 ### 1.  You need to install the following dependency:
 ```
-Lang:
 go@1.19
 nodejs@lts
-python@3.10Package management:
+python@3.10
 npm
 pip
 ```
