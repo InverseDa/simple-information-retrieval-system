@@ -56,10 +56,6 @@ Direct to frontend project directory
 ```
 cd ./backend
 ```
-Before run the backend, you need to install Gin
-```
-go get -u github.com/spf13/viper
-```
 Now you can run Gin
 ```
 go run main.go
