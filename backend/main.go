@@ -41,7 +41,6 @@ func main() {
 		results := se.Search(data.Query)
 		ret := []map[string]interface{}{}
 		for _, id := range results {
-			fmt.Println("[Log] var Docs: ", se.Docs[id])
 			title := search.FindArticleDetails(se.Docs[id])
 			ret = append(ret, map[string]interface{}{
 				"content": se.Docs[id],

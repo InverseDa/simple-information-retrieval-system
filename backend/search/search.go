@@ -93,7 +93,6 @@ func FindArticleDetails(article string) string {
 			i++
 		} else {
 			title += string(r)
-			fmt.Println("[Log] var title: ", title)
 			i += size
 		}
 		if r == '\n' {

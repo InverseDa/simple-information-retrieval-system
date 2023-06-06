@@ -87,7 +87,6 @@ async function deal_axios() {
         content: res.data.pagesString[i].content,
       });
     }
-    console.log(listData.value);
   } catch (err) {
     console.log(err);
   }
@@ -120,7 +119,7 @@ a {
 }
 
 .my-list {
-  width: 800px;
+  width: 1000px;
   margin: 0 auto;
 }
 </style>

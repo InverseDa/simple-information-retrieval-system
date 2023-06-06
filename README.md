@@ -1,4 +1,5 @@
 # simple-information-retrieval-system
+
 A simple information retrieval system for the 40th Anniversary of Shenzhen University.
 
 ## Framework
@@ -8,54 +9,78 @@ A simple information retrieval system for the 40th Anniversary of Shenzhen Unive
 - Backend: Gin
 
 ## How to deploy this project?
-### 1.  You need to install the following dependency:
+
+### 1. You need to install the following dependency:
+
 ```
 go@1.19
 nodejs@lts
 python@3.10
-npm
+pnpm
 pip
 ```
+
 For Ubuntu/Debian:
+
 ```
 sudo apt install golang-1.19 nodejs npm python3 pip
 ```
+
 For Fedora/CentOS:
+
 ```
 sudo dnf install golang python3 python3-pip nodejs npm
 ```
+
 For Arch/Manjaro:
+
 ```
 sudo pacman -S go nodejs npm python3 python3-pip
 ```
+
 For MacOS:
+
 ```
 brew install golang nodejs npm python
 ```
-### 2.  Run Frontend
+
+### 2. Run Frontend
+
 Direct to frontend project directory
+
 ```
 cd ./frontend
-npm install
-``` 
+npm install -g pnpm
+```
+
 Compiles and hot-reloads for development
+
 ```
-npm run serve
+pnpm run serve
 ```
+
 Compiles and minifies for production
+
 ```
-npm run build
+pnpm run build
 ```
+
 Lints and fixes files
+
 ```
-npm run lint
+pnpm run lint
 ```
-### 3.  Run Backend
+
+### 3. Run Backend
+
 Direct to frontend project directory
+
 ```
 cd ./backend
 ```
+
 Now you can run Gin
+
 ```
 go run main.go
 ```
