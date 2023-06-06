@@ -10,7 +10,7 @@ A simple information retrieval system for the 40th Anniversary of Shenzhen Unive
 
 ## How to deploy this project?
 
-### 1. You need to install the following dependency:
+### 1. You need to install the following dependencies
 
 ```
 go@1.19
@@ -20,28 +20,30 @@ pnpm
 pip
 ```
 
-For Ubuntu/Debian:
+For Ubuntu/Debian
 
 ```
 sudo apt install golang-1.19 nodejs npm python3 pip
+npm install -g pnpm
 ```
 
-For Fedora/CentOS:
+For Fedora/CentOS
 
 ```
 sudo dnf install golang python3 python3-pip nodejs npm
+npm install -g pnpm
 ```
 
-For Arch/Manjaro:
+For Arch/Manjaro
 
 ```
-sudo pacman -S go nodejs npm python3 python3-pip
+sudo pacman -S go nodejs pnpm python3 python3-pip
 ```
 
-For MacOS:
+For MacOS
 
 ```
-brew install golang nodejs npm python
+brew install golang nodejs pnpm python
 ```
 
 ### 2. Run Frontend
@@ -50,7 +52,6 @@ Direct to frontend project directory
 
 ```
 cd ./frontend
-npm install -g pnpm
 ```
 
 Compiles and hot-reloads for development
