@@ -14,7 +14,7 @@ import (
 func main() {
 	// 初始化配置，使用相对位置
 	se := search.InitializeSearchEngine("/pages")
-	se.CosineSimlarity()
+	se.Search("深圳大学粤海校区")
 
 	bootstrap.InitializeConfig()
 
