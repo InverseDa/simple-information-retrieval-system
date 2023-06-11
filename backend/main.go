@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"information/bootstrap"
 	"information/global"
-	"information/search"
+	"information/src"
 	"net/http"
 
 	"github.com/gin-contrib/cors"
@@ -13,7 +13,7 @@ import (
 
 func main() {
 	// 初始化配置，使用相对位置
-	se := search.InitializeSearchEngine("/pages")
+	se := src.InitializeSearchEngine("/pages")
 	se.Search("深圳大学粤海校区")
 
 	bootstrap.InitializeConfig()
@@ -42,7 +42,7 @@ func main() {
 		results := se.Search(data.Query)
 		ret := []map[string]interface{}{}
 		for _, id := range results {
-			title := search.FindArticleDetails(se.Docs[id])
+			title := src.FindArticleDetails(se.Docs[id])
 			ret = append(ret, map[string]interface{}{
 				"content": se.Docs[id],
 				"title":   title,
