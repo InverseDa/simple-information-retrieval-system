@@ -80,6 +80,12 @@ Direct to frontend project directory
 cd ./backend
 ```
 
+Install packages
+
+```
+go get
+```
+
 Now you can run Gin
 
 ```

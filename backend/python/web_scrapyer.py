@@ -3,8 +3,9 @@ import re
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support.ui import Select
-from selenium.webdriver.edge.options import Options
+from selenium.webdriver.chrome.options import Options
 from configparser import ConfigParser
+from bs4 import BeautifulSoup
 # 导入环境变量
 import os
 
@@ -28,7 +29,7 @@ password = config["Profile"]["password"]
 # 通过爬虫读取深圳大学
 url = r'https://xq40.szu.edu.cn/'
 # 定位到公文通的首页（先登录）
-browser = webdriver.Edge(options=options)
+browser = webdriver.Chrome(options=options)
 browser.get(url)
 
 browser.get(url + "/tzgg.htm")
@@ -47,7 +48,13 @@ for i, nav in enumerate(nav_url):
         page_url = article.group('url')
         if re.compile(r'weixin').search(page_url):
             browser.get(page_url)
-
+            # 找到文本主体
+            page_element = browser.find_element(
+                'xpath', '/html/body/div[1]/div[2]/div[1]/div/div[1]')
+            page_html = nav.get_attribute('innerHTML')
+            # 匹配所有中文
+            content = re.compile(r'[\u4e00-\u9fa5]+').findall(page_html)
+            ais = 1
         else:
             browser.get(page_url)
             if j == 0:
@@ -60,7 +67,7 @@ for i, nav in enumerate(nav_url):
                 'xpath', '/html/body/table/tbody/tr[2]/td/table/tbody/tr[3]/td/table/tbody/tr[2]/td')
 
         # 写入文件 /data/departmentName/title.txt
-        file_path = os.path.join(PATH, "pages", f"page_{i + j}.txt")
+        file_path = os.path.join(PATH, "pages", f"page_{i * 10 + j}.txt")
         if os.path.exists(file_path):
             print(f"File {file_path} already exists, skipping...")
         else:
