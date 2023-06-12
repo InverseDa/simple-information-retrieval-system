@@ -11,21 +11,25 @@ import (
 	"github.com/yanyiwu/gojieba"
 )
 
+// 倒排索引
 type InvertedIndex map[string][]int
 
+// 搜索引擎
 type SearchEngine struct {
-	Index               InvertedIndex
-	Docs                map[int]string
-	WordSet             map[string]bool         // 用map构造set，比较简单的写法
-	Terms               map[int][]string        // jieba分词的结果
-	CosineSimilarityMap map[int]map[int]float64 //两个文档之间的余弦相似度
+	PostingList         InvertedIndex           // 倒排索引
+	Docs                []string                // 文档集合
+	WordSet             map[string]bool         // 词集（用map构造set，比较简单的写法）
+	Terms               map[int][]string        // 每个文档ID的jieba分词的结果
+	CosineSimilarityMap map[int]map[int]float64 // 两个文档之间的余弦相似度
 	jieba               *gojieba.Jieba
 }
 
+// 判断是否为中文字符
 func isChinese(str string) bool {
 	return regexp.MustCompile(`^[\p{Han}]+$`).MatchString(str)
 }
 
+// 初始化搜索引擎
 func InitializeSearchEngine(pagesDir string) *SearchEngine {
 	dir, _ := os.Getwd()
 	se := SearchEngine{}
@@ -53,8 +57,46 @@ func FindArticleDetails(article string) string {
 	return title
 }
 
+func (s *SearchEngine) intersect(a []int, b []int) []int {
+	ret := make([]int, 0)
+	i := 0
+	j := 0
+	for i < len(a) && j < len(b) {
+		if a[i] == b[j] {
+			ret = append(ret, a[i])
+			i++
+			j++
+		} else if a[i] > b[j] {
+			j++
+		} else {
+			i++
+		}
+	}
+	return ret
+}
+
+// 求并集，已经实现，不需要这个函数了
+// func (s *SearchEngine) union(a []int, b []int) []int {
+// 	hash := make([]int, 10000)
+// 	ret := make([]int, 0)
+// 	for _, v := range a {
+// 		if hash[v] == 0 {
+// 			ret = append(ret, v)
+// 		}
+// 		hash[v]++
+// 	}
+// 	for _, v := range b {
+// 		if hash[v] == 0 {
+// 			ret = append(ret, v)
+// 		}
+// 		hash[v]++
+// 	}
+// 	sort.Ints(ret)
+// 	return ret
+// }
+
 func (s *SearchEngine) BuildInvertedIndex() {
-	s.Index = make(InvertedIndex)
+	s.PostingList = make(InvertedIndex)
 	s.WordSet = make(map[string]bool)
 	s.Terms = make(map[int][]string)
 	for id, doc := range s.Docs {
@@ -65,22 +107,28 @@ func (s *SearchEngine) BuildInvertedIndex() {
 			}
 		}
 		for _, word := range s.Terms[id] {
-			s.Index[word] = append(s.Index[word], id)
+			s.PostingList[word] = append(s.PostingList[word], id)
 			s.WordSet[word] = true
 		}
 	}
 }
 
+// TODO: 完善这个函数
 func (s *SearchEngine) Search(query string) []int {
 	ids := make(map[int]bool)
-
+	afterIntersect := make([]int, 0)
 	words := s.jieba.CutForSearch(query, true)
-	for _, word := range words {
-		if docIds, ok := s.Index[word]; ok {
-			for _, id := range docIds {
-				ids[id] = true
+	for i, word := range words {
+		if docIds, ok := s.PostingList[word]; ok {
+			if i == 0 {
+				afterIntersect = docIds
+			} else {
+				afterIntersect = s.intersect(afterIntersect, docIds)
 			}
 		}
+	}
+	for _, id := range afterIntersect {
+		ids[id] = true
 	}
 	s.CosineSimlarity(query, words)
 
@@ -103,7 +151,7 @@ func (s *SearchEngine) Search(query string) []int {
 }
 
 func (s *SearchEngine) ReadFile(pagesDir string) {
-	s.Docs = make(map[int]string)
+	s.Docs = make([]string, 0)
 	s.jieba = gojieba.NewJieba()
 
 	err := filepath.Walk(pagesDir, func(path string, info os.FileInfo, err error) error {
@@ -119,8 +167,7 @@ func (s *SearchEngine) ReadFile(pagesDir string) {
 			fmt.Println("[Error] ", err)
 			return err
 		}
-		id := len(s.Docs) + 1
-		s.Docs[id] = string(content)
+		s.Docs = append(s.Docs, string(content))
 
 		return nil
 	})
@@ -134,7 +181,7 @@ func (s *SearchEngine) TF_IDF(query string, queryWords []string) (map[int]map[st
 	df := func(word string) int {
 		cnt := 0
 		hash := make(map[int]bool)
-		for _, tmpDocId := range s.Index[word] {
+		for _, tmpDocId := range s.PostingList[word] {
 			if !hash[tmpDocId] {
 				cnt++
 				hash[tmpDocId] = true
@@ -145,7 +192,7 @@ func (s *SearchEngine) TF_IDF(query string, queryWords []string) (map[int]map[st
 	// 再定义TF函数
 	tf := func(word string, docId int) int {
 		cnt := 0
-		for _, tmpDocId := range s.Index[word] {
+		for _, tmpDocId := range s.PostingList[word] {
 			if tmpDocId == docId {
 				cnt++
 			}

@@ -48,7 +48,7 @@ for i, nav in enumerate(nav_url):
         r'<a href="(?P<url>.*?)" class="wl">', re.S).finditer(table_html)
     for j, article in enumerate(article_url):
         page_url = article.group('url')
-        if re.compile(r'weixin').search(page_url):
+        if re.compile(r'mp.weixin.qq.com').search(page_url):
             browser.get(page_url)
             # 找到文本主体
             try:
@@ -61,7 +61,7 @@ for i, nav in enumerate(nav_url):
             soup = BeautifulSoup(page_html, 'html.parser')
             # 匹配所有中文
             content = re.sub(r'\n+', '\n', soup.get_text())
-        elif re.compile(r'bio').search(page_url):
+        elif re.compile(r'bio.szu.edu.cn').search(page_url):
             browser.get(page_url)
             # 找到文本主体
             page_element = browser.find_element(
@@ -70,7 +70,7 @@ for i, nav in enumerate(nav_url):
             soup = BeautifulSoup(page_html, 'html.parser')
             # 匹配所有中文
             content = re.sub(r'\n+', '\n', soup.get_text())
-        elif re.compile(r'ce').search(page_url):
+        elif re.compile(r'ce.szu.edu.cn').search(page_url):
             browser.get(page_url)
             # 找到文本主体
             page_element = browser.find_element(
@@ -88,11 +88,11 @@ for i, nav in enumerate(nav_url):
             soup = BeautifulSoup(page_html, 'html.parser')
             # 匹配所有中文
             content = re.sub(r'\n+', '\n', soup.get_text())
-        elif re.compile(r'info').search(page_url):
+        elif re.compile(r'info').search(page_url):  # 校庆网的文章
             browser.get(url + page_url)
             # 找到文本主体
             page_element = browser.find_element(
-                'xpath', '/html/body/div[3]/div/div/div/div[1]/form/div/div[2]/div')
+                'xpath', '/html/body/div[3]/div/div/div/div[1]/form/div')
             page_html = page_element.get_attribute('innerHTML')
             soup = BeautifulSoup(page_html, 'html.parser')
             # 匹配所有中文
