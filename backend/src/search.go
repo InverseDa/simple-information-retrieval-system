@@ -6,7 +6,6 @@ import (
 	"os"
 	"path/filepath"
 	"regexp"
-	"sort"
 	"unicode/utf8"
 
 	"github.com/yanyiwu/gojieba"
@@ -90,16 +89,17 @@ func (s *SearchEngine) Search(query string) []int {
 		results = append(results, id)
 	}
 
-	sort.SliceStable(results, func(i, j int) bool {
-		return s.CosineSimilarityMap[-1][results[i]] > s.CosineSimilarityMap[-1][results[j]]
-	})
-
 	TopKHeap := InitKHeap(10)
 	for _, id := range results {
-		TopKHeap.Push(id)
+		TopKHeap.Push(Pair{id, s.CosineSimilarityMap[-1][id]})
 	}
 
-	return TopKHeap.data
+	ret := []int{}
+	for _, val := range TopKHeap.data {
+		ret = append(ret, val.first)
+	}
+
+	return ret
 }
 
 func (s *SearchEngine) ReadFile(pagesDir string) {

@@ -1,14 +1,19 @@
 package src
 
+type Pair struct {
+	first  int
+	second float64
+}
+
 // 大小为K的最大堆
 type Heap struct {
-	data []int
+	data []Pair
 	k    int
 }
 
 func InitKHeap(k int) *Heap {
 	return &Heap{
-		data: []int{},
+		data: []Pair{},
 		k:    k,
 	}
 }
@@ -22,11 +27,11 @@ func (h *Heap) Len() int {
 }
 
 func (h *Heap) Less(i, j int) bool {
-	return h.data[i] > h.data[j]
+	return h.data[i].second > h.data[j].second
 }
 
 func (h *Heap) Push(x interface{}) {
-	h.data = append(h.data, x.(int))
+	h.data = append(h.data, x.(Pair))
 	h.ShiftUp()
 	if h.Len() > h.k {
 		h.Pop()

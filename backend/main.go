@@ -1,10 +1,10 @@
 package main
 
 import (
-	"fmt"
 	"information/bootstrap"
 	"information/global"
 	"information/src"
+	"log"
 	"net/http"
 
 	"github.com/gin-contrib/cors"
@@ -14,8 +14,7 @@ import (
 func main() {
 	// 初始化配置，使用相对位置
 	se := src.InitializeSearchEngine("/pages")
-	se.Search("深圳大学粤海校区")
-
+	se.Search("宣传部")
 	bootstrap.InitializeConfig()
 
 	r := gin.Default()
@@ -37,7 +36,7 @@ func main() {
 			c.JSON(http.StatusBadRequest, gin.H{"error": err.Error()})
 			return
 		}
-		fmt.Println("[Log] var query: ", data.Query)
+		log.Println("var query: ", data.Query)
 
 		results := se.Search(data.Query)
 		ret := []map[string]interface{}{}
@@ -49,7 +48,7 @@ func main() {
 			})
 		}
 
-		fmt.Println("[Log] var data.Strings length: ", len(ret))
+		log.Println("var data.Strings length: ", len(ret))
 
 		// 返回响应，将字符串数组编码为JSON格式
 		c.JSON(http.StatusOK, gin.H{"pagesString": ret})
