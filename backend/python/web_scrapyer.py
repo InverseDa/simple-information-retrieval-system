@@ -46,16 +46,19 @@ for i, nav in enumerate(nav_url):
     for j, article in enumerate(article_url):
         page_url = article.group('url')
         if re.compile(r'weixin').search(page_url):
-            continue
-        browser.get(page_url)
-        if j == 0:
-            username = browser.find_element('id', 'username')
-            username.send_keys(account)
-            passwd = browser.find_element('id', 'password')
-            passwd.send_keys(password, Keys.RETURN)
+            browser.get(page_url)
 
-        content = browser.find_element(
-            'xpath', '/html/body/table/tbody/tr[2]/td/table/tbody/tr[3]/td/table/tbody/tr[2]/td')
+        else:
+            browser.get(page_url)
+            if j == 0:
+                username = browser.find_element('id', 'username')
+                username.send_keys(account)
+                passwd = browser.find_element('id', 'password')
+                passwd.send_keys(password, Keys.RETURN)
+
+            content = browser.find_element(
+                'xpath', '/html/body/table/tbody/tr[2]/td/table/tbody/tr[3]/td/table/tbody/tr[2]/td')
+
         # 写入文件 /data/departmentName/title.txt
         file_path = os.path.join(PATH, "pages", f"page_{i + j}.txt")
         if os.path.exists(file_path):
