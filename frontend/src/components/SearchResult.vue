@@ -78,6 +78,7 @@ async function deal_axios() {
     const res = await axios.post("http://localhost:8888/api/query", {
       query: search_value.value,
     });
+    console.log(res.data);
     if (res.data.status === "success") {
       listData.value = [];
       for (let i = 0; i < res.data.pagesString.length; i++) {
@@ -97,6 +98,7 @@ async function deal_axios() {
       }
     }
   } catch (err) {
+    listData.value = [];
     console.log(err);
   }
 }
