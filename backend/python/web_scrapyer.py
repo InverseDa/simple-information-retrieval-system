@@ -60,7 +60,8 @@ for i, nav in enumerate(nav_url):
             page_html = page_element.get_attribute('innerHTML')
             soup = BeautifulSoup(page_html, 'html.parser')
             # 匹配所有中文
-            content = re.sub(r'\n+', '\n', soup.get_text())
+            content = "[url]: " + page_url + "\n" + \
+                re.sub(r'\n+', '\n', soup.get_text())
         elif re.compile(r'bio.szu.edu.cn').search(page_url):
             browser.get(page_url)
             # 找到文本主体
@@ -69,7 +70,8 @@ for i, nav in enumerate(nav_url):
             page_html = page_element.get_attribute('innerHTML')
             soup = BeautifulSoup(page_html, 'html.parser')
             # 匹配所有中文
-            content = re.sub(r'\n+', '\n', soup.get_text())
+            content = "[url]: " + page_url + "\n" + \
+                re.sub(r'\n+', '\n', soup.get_text())
         elif re.compile(r'ce.szu.edu.cn').search(page_url):
             browser.get(page_url)
             # 找到文本主体
@@ -78,7 +80,8 @@ for i, nav in enumerate(nav_url):
             page_html = page_element.get_attribute('innerHTML')
             soup = BeautifulSoup(page_html, 'html.parser')
             # 匹配所有中文
-            content = re.sub(r'\n+', '\n', soup.get_text())
+            content = "[url]: " + page_url + "\n" + \
+                re.sub(r'\n+', '\n', soup.get_text())
         elif re.compile(r'info.lib.szu.edu.cn').search(page_url):
             browser.get(page_url)
             # 找到文本主体
@@ -87,7 +90,8 @@ for i, nav in enumerate(nav_url):
             page_html = page_element.get_attribute('innerHTML')
             soup = BeautifulSoup(page_html, 'html.parser')
             # 匹配所有中文
-            content = re.sub(r'\n+', '\n', soup.get_text())
+            content = "[url]: " + page_url + "\n" + \
+                re.sub(r'\n+', '\n', soup.get_text())
         elif re.compile(r'info').search(page_url):  # 校庆网的文章
             browser.get(url + page_url)
             # 找到文本主体
@@ -96,7 +100,8 @@ for i, nav in enumerate(nav_url):
             page_html = page_element.get_attribute('innerHTML')
             soup = BeautifulSoup(page_html, 'html.parser')
             # 匹配所有中文
-            content = re.sub(r'\n+', '\n', soup.get_text())
+            content = "[url]: " + url + page_url + "\n" + \
+                re.sub(r'\n+', '\n', soup.get_text())
         else:
             browser.get(page_url)
             if j == 0:
@@ -107,7 +112,7 @@ for i, nav in enumerate(nav_url):
 
             content = browser.find_element(
                 'xpath', '/html/body/table/tbody/tr[2]/td/table/tbody/tr[3]/td/table/tbody/tr[2]/td')
-            content = content.text
+            content = "[url]: " + page_url + "\n" + content.text
 
         # 写入文件 /data/departmentName/title.txt
         file_path = os.path.join(PATH, "pages", f"page_{i * 10 + j}.txt")
