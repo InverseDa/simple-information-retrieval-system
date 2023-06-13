@@ -42,6 +42,7 @@ func main() {
 		start := time.Now()
 		results := se.Search(data.Query)
 		end := time.Now()
+
 		// 如果搜不到数据，进行编辑距离计算
 		if len(results) == 0 {
 			fuzzySearchResults := se.FuzzySearch(data.Query)
@@ -57,13 +58,12 @@ func main() {
 					"url":     url,
 					"title":   title,
 					"content": content,
-					"time":    end.Sub(start).Seconds(),
 				})
 			}
 			log.Println("var data.Strings length: ", len(ret))
 
 			// 返回响应，将字符串数组编码为JSON格式
-			c.JSON(http.StatusOK, gin.H{"status": "success", "pagesString": ret})
+			c.JSON(http.StatusOK, gin.H{"status": "success", "pagesString": ret, "time": end.Sub(start).Seconds()})
 		}
 
 	})
