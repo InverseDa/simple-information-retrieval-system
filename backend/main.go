@@ -6,6 +6,7 @@ import (
 	"information/src"
 	"log"
 	"net/http"
+	"time"
 
 	"github.com/gin-contrib/cors"
 	"github.com/gin-gonic/gin"
@@ -38,7 +39,9 @@ func main() {
 		}
 		log.Println("var query: ", data.Query)
 
+		start := time.Now()
 		results := se.Search(data.Query)
+		end := time.Now()
 		// 如果搜不到数据，进行编辑距离计算
 		if len(results) == 0 {
 			fuzzySearchResults := se.FuzzySearch(data.Query)
@@ -54,6 +57,7 @@ func main() {
 					"url":     url,
 					"title":   title,
 					"content": content,
+					"time":    end.Sub(start).Seconds(),
 				})
 			}
 			log.Println("var data.Strings length: ", len(ret))
