@@ -14,7 +14,7 @@ import (
 func main() {
 	// 初始化配置，使用相对位置
 	se := src.InitializeSearchEngine("/pages")
-	se.Search("宣传部")
+	se.Search("宣传")
 	bootstrap.InitializeConfig()
 
 	r := gin.Default()
@@ -39,19 +39,24 @@ func main() {
 		log.Println("var query: ", data.Query)
 
 		results := se.Search(data.Query)
-		ret := []map[string]interface{}{}
-		for _, id := range results {
-			title := src.FindArticleDetails(se.Docs[id])
-			ret = append(ret, map[string]interface{}{
-				"content": se.Docs[id],
-				"title":   title,
-			})
+		// 如果搜不到数据，进行编辑距离计算
+		if len(results) == 0 {
+			fuzzySearchResults := se.FuzzySearch(data.Query)
+			log.Println("var fuzzySearchResults: ", fuzzySearchResults)
+			c.JSON(http.StatusOK, gin.H{"status": "error", "fuzzySearchString": fuzzySearchResults})
+		} else {
+			ret := []map[string]interface{}{}
+			for _, id := range results {
+				title := src.FindArticleDetails(se.Docs[id])
+				ret = append(ret, map[string]interface{}{
+					"content": se.Docs[id],
+					"title":   title,
+				})
+			}
+			log.Println("var data.Strings length: ", len(ret))
+			// 返回响应，将字符串数组编码为JSON格式
+			c.JSON(http.StatusOK, gin.H{"status": "success", "pagesString": ret})
 		}
-
-		log.Println("var data.Strings length: ", len(ret))
-
-		// 返回响应，将字符串数组编码为JSON格式
-		c.JSON(http.StatusOK, gin.H{"pagesString": ret})
 
 	})
 

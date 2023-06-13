@@ -53,6 +53,7 @@ const search_value = ref("");
 const is_loading = ref(false);
 const route = useRoute();
 const listData = ref([]);
+const fuzzyData = ref([]);
 
 if (route.params.query) {
   search_value.value = route.params.query;
@@ -77,15 +78,23 @@ async function deal_axios() {
     const res = await axios.post("http://localhost:8888/api/query", {
       query: search_value.value,
     });
-    listData.value = [];
-    for (let i = 0; i < res.data.pagesString.length; i++) {
-      listData.value.push({
-        href: "https://www.antdv.com/",
-        title: res.data.pagesString[i].title,
-        description:
-          "Ant Design, a design language for background applications, is refined by Ant UED Team.",
-        content: res.data.pagesString[i].content,
-      });
+    if (res.data.status === "success") {
+      listData.value = [];
+      for (let i = 0; i < res.data.pagesString.length; i++) {
+        listData.value.push({
+          href: "https://www.antdv.com/",
+          title: res.data.pagesString[i].title,
+          description:
+            "Ant Design, a design language for background applications, is refined by Ant UED Team.",
+          content: res.data.pagesString[i].content,
+        });
+      }
+    } else {
+      fuzzyData.value = [];
+      for (let i = 0; i < res.data.fuzzySearchString.length; i++) {
+        fuzzyData.value.push(res.data.fuzzySearchString[i]);
+        console.log(fuzzyData.value[i]);
+      }
     }
   } catch (err) {
     console.log(err);

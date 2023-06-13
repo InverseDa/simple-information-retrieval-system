@@ -8,6 +8,7 @@ import (
 	"regexp"
 	"unicode/utf8"
 
+	"github.com/kljensen/snowball"
 	"github.com/yanyiwu/gojieba"
 )
 
@@ -19,7 +20,7 @@ type SearchEngine struct {
 	PostingList         InvertedIndex           // 倒排索引
 	Docs                []string                // 文档集合
 	WordSet             map[string]bool         // 词集（用map构造set，比较简单的写法）
-	Terms               map[int][]string        // 每个文档ID的jieba分词的结果
+	Terms               map[int][]string        // 每个文档ID的分词的结果
 	CosineSimilarityMap map[int]map[int]float64 // 两个文档之间的余弦相似度
 	jieba               *gojieba.Jieba
 }
@@ -55,6 +56,38 @@ func FindArticleDetails(article string) string {
 		}
 	}
 	return title
+}
+
+func min(a, b int) int {
+	if a < b {
+		return a
+	}
+	return b
+}
+
+func CalculateEditDistance(s1 string, s2 string) int {
+	dp := make([][]int, len(s1)+1)
+	for i := 0; i <= len(s1); i++ {
+		dp[i] = make([]int, len(s2)+1)
+	}
+	for i := 1; i <= len(s1); i++ {
+		dp[i][0] = i
+	}
+	for j := 1; j <= len(s2); j++ {
+		dp[0][j] = j
+	}
+
+	for i := 1; i <= len(s1); i++ {
+		for j := 1; j <= len(s2); j++ {
+			if s1[i-1] == s2[j-1] {
+				dp[i][j] = dp[i-1][j-1]
+			} else {
+				dp[i][j] = min(dp[i-1][j], min(dp[i][j-1], dp[i-1][j-1])) + 1
+			}
+		}
+	}
+
+	return dp[len(s1)][len(s2)]
 }
 
 func (s *SearchEngine) intersect(a []int, b []int) []int {
@@ -101,12 +134,17 @@ func (s *SearchEngine) BuildInvertedIndex() {
 	s.Terms = make(map[int][]string)
 	for id, doc := range s.Docs {
 		words := s.jieba.CutForSearch(doc, true)
+		englishWords := regexp.MustCompile(`\b\w+\b`).FindAllString(doc, -1)
 		for _, word := range words {
 			if isChinese(word) {
 				s.Terms[id] = append(s.Terms[id], word)
+				s.PostingList[word] = append(s.PostingList[word], id)
+				s.WordSet[word] = true
 			}
 		}
-		for _, word := range s.Terms[id] {
+		for _, word := range englishWords {
+			word, _ = snowball.Stem(word, "english", true)
+			s.Terms[id] = append(s.Terms[id], word)
 			s.PostingList[word] = append(s.PostingList[word], id)
 			s.WordSet[word] = true
 		}
@@ -176,6 +214,7 @@ func (s *SearchEngine) ReadFile(pagesDir string) {
 	}
 }
 
+// 返回1. 文档的TF-IDF向量 2. Query的TF-IDF向量
 func (s *SearchEngine) TF_IDF(query string, queryWords []string) (map[int]map[string]float64, map[string]float64) {
 	// 先定义DF函数
 	df := func(word string) int {
@@ -199,7 +238,7 @@ func (s *SearchEngine) TF_IDF(query string, queryWords []string) (map[int]map[st
 		}
 		return cnt
 	}
-	////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	// ==============================================================================================================
 	// 计算文档的IDF
 	idf := make(map[string]float64)
 	for word := range s.WordSet {
@@ -219,7 +258,7 @@ func (s *SearchEngine) TF_IDF(query string, queryWords []string) (map[int]map[st
 			}
 		}
 	}
-	////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	// ==============================================================================================================
 	// 计算Query的TF-IDF
 	// query_idf := make(map[string]float64)
 	query_tf := make(map[string]float64)
@@ -257,4 +296,14 @@ func (s *SearchEngine) CosineSimlarity(query string, queryWords []string) {
 			s.CosineSimilarityMap[-1][docId] = numerator / denominator
 		}
 	}
+}
+
+func (s *SearchEngine) FuzzySearch(query string) []string {
+	ret := make([]string, 0)
+	for word := range s.WordSet {
+		if CalculateEditDistance(query, word) <= 2 {
+			ret = append(ret, word)
+		}
+	}
+	return ret
 }
