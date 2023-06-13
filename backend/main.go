@@ -46,14 +46,18 @@ func main() {
 			c.JSON(http.StatusOK, gin.H{"status": "error", "fuzzySearchString": fuzzySearchResults})
 		} else {
 			ret := []map[string]interface{}{}
+			// 处理结果
 			for _, id := range results {
-				title := src.FindArticleDetails(se.Docs[id])
+				page := se.Docs[id]
+				url, title, content := src.DealDocs(page)
 				ret = append(ret, map[string]interface{}{
-					"content": se.Docs[id],
+					"url":     url,
 					"title":   title,
+					"content": content,
 				})
 			}
 			log.Println("var data.Strings length: ", len(ret))
+
 			// 返回响应，将字符串数组编码为JSON格式
 			c.JSON(http.StatusOK, gin.H{"status": "success", "pagesString": ret})
 		}

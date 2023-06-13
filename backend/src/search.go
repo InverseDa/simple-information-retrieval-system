@@ -6,6 +6,7 @@ import (
 	"os"
 	"path/filepath"
 	"regexp"
+	"strings"
 	"unicode/utf8"
 
 	"github.com/kljensen/snowball"
@@ -306,4 +307,25 @@ func (s *SearchEngine) FuzzySearch(query string) []string {
 		}
 	}
 	return ret
+}
+
+func DealDocs(docs string) (string, string, string) {
+	_url := regexp.MustCompile(`\[url\]:\s+(.*)`).FindStringSubmatch(docs)[1]
+	parts := strings.Split(docs, "\n")
+	_title := ""
+	_content := ""
+	isTitle := true
+	for _, str := range parts {
+		if str == "" || regexp.MustCompile(`^\s*$`).MatchString(str) || regexp.MustCompile(`\[url\]:\s+(.*)`).MatchString(str) {
+			continue
+		}
+		if isTitle {
+			_title = str
+			isTitle = false
+		} else {
+			_content += str + "\n"
+		}
+
+	}
+	return _url, _title, _content
 }
