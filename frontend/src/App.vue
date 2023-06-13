@@ -4,19 +4,19 @@
   </div>
 </template>
 
-<script setup>
-
-</script>
+<script setup></script>
 
 <style>
-html,body,#app {
+html,
+body,
+#app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
-  background-color: #2c3e50;
+  background-color: #ffffff;
   height: 100%;
 }
 </style>

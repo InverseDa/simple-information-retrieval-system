@@ -9,36 +9,32 @@
       enter-button
       @search="searching"
     />
+    <div>
+      <a></a>
+    </div>
     <div class="my-list">
-      <a-list
-        item-layout="vertical"
-        size="large"
-        :pagination="pagination"
-        :data-source="listData"
-      >
-        <template #footer>
-          <div>
-            <b>Powered by miaokeda.</b>
-          </div>
-        </template>
-        <template #renderItem="{ item }">
-          <a-list-item key="item.title">
-            <template #extra>
-              <img
-                width="272"
-                alt="logo"
-                src="https://gw.alipayobjects.com/zos/rmsportal/mqaQswcyDLcXyDKnZfES.png"
-              />
-            </template>
-            <a-list-item-meta :description="item.description">
-              <template #title>
-                <a :href="item.href">{{ item.title }}</a>
-              </template>
-            </a-list-item-meta>
-            {{ item.content }}
-          </a-list-item>
-        </template>
-      </a-list>
+      <br />
+      <br />
+      <template v-for="(pages, index) in listData" :key="index">
+        <a-descriptions :title="`Result ${index + 1}`" bordered>
+          <a-descriptions-item
+            label="Title"
+            style="text-align: center"
+            :span="3"
+          >
+            <a :href="pages.href" style="color: #42b983; text-align: left">{{
+              pages.title
+            }}</a>
+          </a-descriptions-item>
+          <a-descriptions-item label="Content" style="text-align: center">
+            <pre class="content" style="text-align: left">
+              {{ pages.content }}
+            </pre>
+          </a-descriptions-item>
+        </a-descriptions>
+        <br />
+        <br />
+      </template>
     </div>
   </div>
 </template>
@@ -60,13 +56,6 @@ if (route.params.query) {
   searching();
 }
 
-const pagination = {
-  onChange: (page) => {
-    console.log(page);
-  },
-  pageSize: 3,
-};
-
 async function searching() {
   is_loading.value = true;
   await deal_axios();
@@ -83,52 +72,40 @@ async function deal_axios() {
       listData.value = [];
       for (let i = 0; i < res.data.pagesString.length; i++) {
         listData.value.push({
-          href: "https://www.antdv.com/",
-          title: res.data.pagesString[i].title,
-          description:
-            "Ant Design, a design language for background applications, is refined by Ant UED Team.",
-          content: res.data.pagesString[i].content,
+          href: res.data.pagesString[i].url,
+          title: res.data.pagesString[i].title.replace(" ", ""),
+          // description:
+          //   "Ant Design, a design language for background applications, is refined by Ant UED Team.",
+          content: res.data.pagesString[i].content
+            .replace(
+              /(\d+|[一二三四五六七八九十]+|（\d+|[一二三四五六七八九十]+）|\d+\.)(?=([^0-9]|$))(◆|▲|●)/g,
+              "$1\n$2"
+            )
+            .replace(/ {4,}/g, "\n"),
         });
       }
     } else {
       fuzzyData.value = [];
+      listData.value = [];
       for (let i = 0; i < res.data.fuzzySearchString.length; i++) {
         fuzzyData.value.push(res.data.fuzzySearchString[i]);
         console.log(fuzzyData.value[i]);
       }
     }
   } catch (err) {
-    listData.value = [];
     console.log(err);
   }
 }
 </script>
 
 <style scoped>
-h3 {
-  margin: 40px 0 0;
-}
-
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-
-a {
-  color: #42b983;
-  text-align: left;
-}
-
 .my-input {
   width: 500px;
   margin: 0 auto;
 }
-
+.content {
+  white-space: pre-line;
+}
 .my-list {
   width: 1000px;
   margin: 0 auto;
