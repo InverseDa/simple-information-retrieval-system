@@ -156,7 +156,18 @@ func (s *SearchEngine) BuildInvertedIndex() {
 func (s *SearchEngine) Search(query string) []int {
 	ids := make(map[int]bool)
 	afterIntersect := make([]int, 0)
-	words := s.jieba.CutForSearch(query, true)
+	chineseWords := s.jieba.CutForSearch(query, true)
+	englishWords := regexp.MustCompile(`\b\w+\b`).FindAllString(query, -1)
+	words := make([]string, 0)
+	for _, word := range chineseWords {
+		if isChinese(word) {
+			words = append(words, word)
+		}
+	}
+	for _, word := range englishWords {
+		word, _ = snowball.Stem(word, "english", true)
+		words = append(words, word)
+	}
 	for i, word := range words {
 		if docIds, ok := s.PostingList[word]; ok {
 			if i == 0 {

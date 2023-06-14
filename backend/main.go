@@ -6,6 +6,8 @@ import (
 	"information/src"
 	"log"
 	"net/http"
+	"os"
+	"os/exec"
 	"time"
 
 	"github.com/gin-contrib/cors"
@@ -14,8 +16,24 @@ import (
 
 func main() {
 	// 初始化配置，使用相对位置
+	dir, _ := os.Getwd()
 	se := src.InitializeSearchEngine("/pages")
-	se.Search("宣传")
+
+	// 启动定时任务
+	duration := 12 * time.Hour
+	go func() {
+		for range time.Tick(duration) {
+			cmd := exec.Command("python", dir+"python/web_scrapyer.py")
+			err := cmd.Run()
+			if err != nil {
+				log.Println("Error executing Python script:", err)
+			} else {
+				log.Println("Python script executed successfully")
+			}
+			se = src.InitializeSearchEngine("/pages")
+		}
+	}()
+
 	bootstrap.InitializeConfig()
 
 	r := gin.Default()
