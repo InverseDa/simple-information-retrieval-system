@@ -228,7 +228,7 @@ func (s *SearchEngine) ReadFile(pagesDir string) {
 	}
 }
 
-// 返回1. 文档的TF-IDF向量 2. Query的TF-IDF向量
+// 返回 文档的TF-IDF向量
 func (s *SearchEngine) TF_IDF_ForDocs() map[int]map[string]float64 {
 	// 先定义DF函数
 	df := func(word string) int {
@@ -272,8 +272,6 @@ func (s *SearchEngine) TF_IDF_ForDocs() map[int]map[string]float64 {
 			}
 		}
 	}
-	// ==============================================================================================================
-
 	return tf_idf
 }
 

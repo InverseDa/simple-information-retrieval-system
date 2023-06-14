@@ -59,7 +59,6 @@ func main() {
 
 		start := time.Now()
 		results := se.Search(data.Query)
-		end := time.Now()
 
 		// 如果搜不到数据，进行编辑距离计算
 		if len(results) == 0 {
@@ -78,7 +77,10 @@ func main() {
 					"content": content,
 				})
 			}
+			end := time.Now()
+
 			log.Println("var data.Strings length: ", len(ret))
+			log.Printf("查询耗时：%f秒\n", end.Sub(start).Seconds())
 
 			// 返回响应，将字符串数组编码为JSON格式
 			c.JSON(http.StatusOK, gin.H{"status": "success", "pagesString": ret, "time": end.Sub(start).Seconds()})
