@@ -92,4 +92,16 @@ Now you can run Gin
 go run main.go
 ```
 
-## Feature
+## Where is config.ini?
+
+`config.ini` includ your www1.szu.edu.cn account and password.
+
+Format:
+
+```config
+[Profile]
+account =
+password =
+```
+
+It should be created in `backend/python` and loaded when `backend/python/web_scrapyer.py` is running.
