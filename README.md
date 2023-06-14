@@ -94,9 +94,9 @@ go run main.go
 
 ## Where is config.ini?
 
-`config.ini` includ your www1.szu.edu.cn account and password.
+Configuration file `config.ini` include your www1.szu.edu.cn account and password.
 
-Format:
+`config.ini` Format:
 
 ```config
 [Profile]

@@ -16,6 +16,18 @@ options.add_argument('--disable-gpu')
 options.add_argument('--no-sandbox')
 options.add_argument('--disable-dev-shm-usage')
 
+# 创建pages文件夹
+current_dir = os.path.dirname(__file__)
+folder_name = 'pages'
+folder_path = os.path.join(current_dir, '..', folder_name)
+if not os.path.exists(folder_path):
+    # 如果文件夹不存在，则创建文件夹
+    os.mkdir(folder_path)
+    print(f'文件夹 {folder_name} 创建成功！')
+else:
+    # 如果文件夹已经存在，则打印提示信息
+    print(f'文件夹 {folder_name} 已经存在！')
+
 # 获取用户的主目录以及项目位置
 PATH = os.path.dirname(os.path.abspath(__file__)) + "/../"
 
