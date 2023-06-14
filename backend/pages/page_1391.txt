@@ -1,0 +1,18 @@
+[url]: http://www1.szu.edu.cn/board/view.asp?id=486252
+学术报告九十八：Adaptive slicing for functional slice inverse.....
+数学与统计学院　2022/12/6 14:32:00
+  数学与统计学院学术报告[2022] 098号
+(高水平大学建设系列报告765号)
+报告题目:  Adaptive slicing for functional slice inverse regression
+报告人：  　王国长 （暨南大学）
+报告时间： 2022年   12 月 　8  日  （周四） 14:30—15:30
+腾讯会议ID：629-723-469                                            　 
+报告内容:
+  In the paper, we propose a functional dimension reduction method for functional predictor and a scalar response. In the past study, the most popular functional dimension reduction method is the functional sliced inverse regression (FSIR) and people usually use a fixed slicing scheme to implement the estimation of FSIR. However, in practical, there are two main questions for the fixed slicing scheme. The one is how many slices should be chosen and the other is how to divide all samples into different slices. To solve these problems, we first expand the functional predictor and functional regression parameters on the functional principal component basis or a given basis such as B-spline basis. Then we estimate the functional regression parameters by using the adaptive slicing for FSIR approach. Simulation results and real data analysis are presented to show the merit of the new proposed method.
+  报告人简历：
+  王国长，现任暨南大学经济学院统计学系教授、博士生导师。2012年毕业于东北师范大学数学与统计学院统计系，并取得统计学博士学位。主要研究方向为函数型数据分析、时间序列、充分性降维等，迄今为止在Journal of Econometrics, Journal of the Business & Economic Statistics, Statistica Sinica等重要学术期刊发表论文20余篇。主持国家社科基金一般项目和国家自然科学基金面上和青年项目。 任中国现场统计研究会资源与环境统计分会常务理事；中国旅游大数据协会，理事，副秘书长；广东省现场统计协会常务理事，秘书长。
+
+ 欢迎感兴趣的师生参加！
+数学与统计学院
+                             2022年12月06日
+（本文更新于2022/12/6 14:32:00）

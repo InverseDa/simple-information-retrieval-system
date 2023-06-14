@@ -1,0 +1,18 @@
+[url]: http://www1.szu.edu.cn/board/view.asp?id=486940
+学术报告一百零四：nhomogeneous regularities and uniform....
+数学与统计学院　2022/12/17 17:29:00
+  数学与统计学院学术报告[2022] 104号
+(高水平大学建设系列报告771号)
+报告题目: Inhomogeneous regularities and uniform boundedness of entropy to compressible Navier-Stokes in multi-dimensions
+报告人：李进开教授（华南师范大学）
+报告时间：2022年12月18日10：00-11：00
+腾讯会议：584-598-996
+报告内容：
+   In this talk, we will consider the following two issues for the Cauchy problem to the heat conductive compressible Navier-Stokes equations in the presence of far field vacuum: (i) regularities of solutions in the inhomogeneous Sobolev spaces; (ii) uniform boundedness of the entropy. The previous works concerning these two issues focus on the case in one dimension. While in this talk, we will update the results for the case in multi-dimensions. This talk is based on a recent joint work with Prof . Zhouping Xin.
+报告人简历：
+  李进开，华南师范大学数学科学学院教授，博士生导师。2022年入选“国家高层次人才特殊支持计划”科技创新领军人才，2018年入选“国家海外高层次人才引进计划”青年项目，曾获得“2020世界华人数学家联盟最佳论文奖”金奖（2020 ICCM Best Paper Award）以及“第二届中国科协优秀科技论文”奖。目前已在包括CPAM, Adv. Math, JFA, ARMA, CPDE, SIMA等国际学术期刊上发表SCI论文40篇。
+
+欢迎感兴趣的师生参加！
+                                          数学与统计学院
+                                                 2022年12月17日
+（本文更新于2022/12/17 17:29:00）

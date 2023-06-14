@@ -1,0 +1,18 @@
+[url]: http://www1.szu.edu.cn/board/view.asp?id=486249
+学术报告九十六： Computationally efficient and data-adaptive....
+数学与统计学院　2022/12/6 14:21:00
+  数学与统计学院学术报告[2022] 096号
+(高水平大学建设系列报告763号)
+报告题目:  Computationally efficient and data-adaptive change-point inference in high dimension
+报告人： 冯龙 （南开大学）
+报告时间： 2022年　 12 月 　7  日  （周三） 　14:00——15:00
+腾讯会议ID：  454-647-867                                                
+报告内容:
+  High-dimensional change-point inference that adapts to various change patterns has received much attention recently. We propose a simple, fast yet effective approach for adaptive change-point testing. The key observation is that two statistics based on aggregating cumulative sum statistics over all dimensions and possible change-points by taking their maximum and summation, respectively, are asymptotically independent under some mild conditions. Hence we are able to form a new test by combining the p-values of the maximum- and summation-type statistics according to their limit null distributions. To this end, we develop new tools and techniques to establish asymptotic distribution of the maximum-type statistic under a more relaxed condition on component wise correlations among all variables than that in existing literature. The proposed method is simple to use and computationally efficient. It is adaptive to different sparsity levels of change signals, and is comparable to or even outperforms existing approaches as revealed by our numerical studies.
+报告人简历：
+  冯龙现任南开大学统计与数据科学学院副教授、特聘研究员、博士生导师。2022年入选南开大学百名青年学科带头人。主要从事质量控制、非参数模型、高维数据分析方面的研究，在统计学国际顶尖杂志Journal of American Statistical Association、Biometrika、Annals of Statistics、Journal of Econometrics、Journal of Business and Economic Statistics、Technometrics等发表多篇论文。
+欢迎感兴趣的师生参加！
+
+数学与统计学院
+2022年  12月  06日
+（本文更新于2022/12/6 14:21:00）

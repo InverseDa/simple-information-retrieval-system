@@ -1,0 +1,16 @@
+[url]: http://www1.szu.edu.cn/board/view.asp?id=486488
+学术报告一百： Separating systole for random hyperbolic surfaces...
+数学与统计学院　2022/12/10 21:08:00
+  数学与统计学院学术报告[2022] 100号
+(高水平大学建设系列报告767号)
+报告题目: Separating systole for random hyperbolic surfaces of Weil-Petersson model
+报告人：薛宇皓 博士 （ 清华大学）
+报告时间：2022年12月11日10：00-11：30
+报告地点：#腾讯会议：560-827-602                                           报告内容：
+  The Weil-Petersson metric on the moduli space of genus g hyperbolic surfaces is of finite volume, and hence induce a probability measure. In this talk, we will discuss the behavior of some geometric quantities, especially the separating systole, for random hyperbolic surfaces with respect to this Weil-Petersson measure. We show that the length of separating systole is approximately 2log(g)-4log(log(g)) and it separates out a one-holed torus for random hyperbolic surfaces. This talk is based on joint works with Xin Nie, Hugo Parlier and Yunhui Wu.
+报告人简历：
+  薛宇皓，清华大学在读博士，主要研究方向为黎曼曲面、泰希米勒空间与谱几何，在GAFA、AJM、TAMS等国际一流数学期刊发表论文多篇。
+ 欢迎感兴趣的师生参加！
+                                            数学与统计学院
+                                                 2022年12月10日
+（本文更新于2022/12/10 21:08:00）

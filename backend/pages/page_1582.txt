@@ -1,0 +1,12 @@
+[url]: http://www1.szu.edu.cn/board/view.asp?id=485692
+材料学院张朝华副教授《Cell Rep. Phys. Sci.》和《Adv. Energy Mater.》: 实现热输运
+材料学院　2022/11/30 8:44:00
+  　 热电材料能够实现热能和电能之间的直接相互转换，在固态制冷和废热收集方面具有广阔的应用前景，同时具有便携、无噪音、可靠性强和环保等优点。提升热电材料的热电优值（ZT）是实现高性能热电器件的关键。但是，热输运参数和电输运参数的优化总是相互制约，使得ZT值很难得到大幅的优化。为了解决这一问题，深圳大学材料学院张朝华副教授及其合作者提出了两种策略来实现热输运和电输运的协同调控，从而在GeTe基合金体系中实现了热电性能的增强。
+ （1）策略1：具有特定晶体角度和原子位置偏移的新奇相结构调控
+通过调控成分和热处理工艺，可以获得一种新奇的亚稳态GeTe，能大幅提升该材料在低温范围内的ZT值。通过Raman、XRD、TEM、DFT分析，证明这种奇异的热电性能增强现象来源于GeTe基合金中特定晶体角度和原子位置偏移。该工作发现的新型相结构调控为实现热输运和电输运的协同调控提供了一类新途径，以“Anomalous enhancement of thermoelectric performance in GeTe with specific interaxial angle and atomic displacement synergy”发表在Cell Reports Physical Science (Cell杂志社新期刊)。该工作的第一作者为深圳大学材料学院硕士生汪龙泉（已毕业去日本读博），通讯作者有南京大学徐伟高教授、日本Takao Mori教授、张朝华副教授（Lead Contact）。
+（2）策略2：“晶界肤色”调控
+ 晶界作为多晶材料的关键特征，对热电性能具有关键影响。通过GeTe基合金中Ga元素的偏析获得了“Grain boundary complexions(晶界肤色)”，发现这种新型界面相对热输运和电输运的协同调控具有积极的作用。我们通过EPMA、APT、DFT等实验和理论研究揭示了该策略实现热电性能增强的机制，并组装了相关热电器件，获得了不错的输出功率。该工作提出的“晶界肤色”能为热电输运调控提供一个新的自由度，以“Grain Boundary Complexions Enable a Simultaneous Optimization of Electron and Phonon Transport Leading to High-Performance GeTe Thermoelectric Devices”发表在Advanced Energy Materials (影响因子：29.368，中科院一区)。该工作是深圳大学与德国亚琛工业大学共同完成，张朝华副教授为该工作的第一作者和通讯作者，另一通讯作者为余愿博士。硕士生晏淦和王毅博相继对本工作的完善做出重要贡献。
+这两个工作都是以深圳大学为第一单位，得到了李均钦、刘福生、胡利鹏、敖伟琴老师的大力支持，也得到了国家自然科学基金委、广东省基金委和深圳市科技创新委员会的资助。全文链接为：
+1）https://doi.org/10.1016/j.xcrp.2022.101009
+2）https://doi.org/10.1002/aenm.202203361 
+（本文更新于2022/11/30 8:44:00）

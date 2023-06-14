@@ -1,0 +1,18 @@
+[url]: http://www1.szu.edu.cn/board/view.asp?id=486518
+学术报告一百零二：近似算法设计与分析介绍
+数学与统计学院　2022/12/12 10:54:00
+  数学与统计学院学术报告[2022] 101号
+(高水平大学建设系列报告769号) 
+报告题目: 近似算法设计与分析介绍
+报告人：徐大川 教授 (北京工业大学)
+报告时间：2022年12月12日15:30 – 16:30
+报告地点：腾讯会议：626-793-826
+报告内容：
+近似算法是计算机科学和组合优化领域的重要方向。本报告以聚类问题，次模优化问题，图划分问题，排序问题等为例，介绍近似算法设计与分析的主要技巧，并概述团队近年来取得的研究成果。
+ 报告人简历：
+徐大川，北京工业大学数理学院运筹学与控制论责任教授，数学/统计学博士生导师。北京工业大学区块链研究中心副主任。2002 年于中国科学院数学与系统科学研究院获得博士学位。研究兴趣包括：机器学习与优化，近似算法等。中国运筹学会数学规划分会理事长，中国运筹学会宣传工作委员会主任，北京运筹学会副理事长。《Asia-Pacific Journal of Operational Research》《Applied Mathematics and Computation》《Journal of the Operations Research Society of China》《Discrete Mathematics, Algorithmsand Applications》《Statistics, Optimization and Information Computing》《运筹与管理》编委，《Algorithmica》《Journal of Combinatorial Optimization》客座编委。ISMP 2022组委会秘书长，COCOA 21，COCOON 17 程序委员会主席, LOD 20, AAIM 20，LION 14程序委员会委员。曾获得中国运筹学会青年论文奖一等奖、中国运筹学会运筹新人奖。主持国家自然科学基金青年基金 1 项、面上项目 4 项、天元基金 1 项、重点项目子课题 1项、重点项目1项。出版学术专著1部，在《Mathematical Programming》《Operations Research》《INFORMS Journal on Computing》《Algorithmica》等发表学术论文 200 余篇。
+
+欢迎感兴趣的师生参加！
+ 　　　　　　　　　　　  　　　　　　　　　　　　　 数学与统计学院
+                                                 2022年12月12日
+（本文更新于2022/12/12 10:54:00）

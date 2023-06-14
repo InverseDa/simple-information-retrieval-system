@@ -23,7 +23,7 @@ func main() {
 	duration := 12 * time.Hour
 	go func() {
 		for range time.Tick(duration) {
-			cmd := exec.Command("python", dir+"python/web_scrapyer.py")
+			cmd := exec.Command("/opt/homebrew/bin/python3", dir+"python/web_scrapyer.py")
 			err := cmd.Run()
 			if err != nil {
 				log.Println("Error executing Python script:", err)

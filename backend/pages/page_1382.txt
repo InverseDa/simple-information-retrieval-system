@@ -1,0 +1,18 @@
+[url]: http://www1.szu.edu.cn/board/view.asp?id=486494
+学术报告一百零一：Distributed cooperative algorithms motivated by...
+数学与统计学院　2022/12/11 22:26:00
+  数学与统计学院学术报告[2022] 101号
+(高水平大学建设系列报告768号)
+报告题目: Distributed cooperative algorithms motivated by Energy Internet
+报告人：李韬（华东师范大学）
+报告时间：2022.12.12 　下午 15: 00 - 16: 00
+直播平台及链接： 腾讯会议  987-838-428                                     
+报告内容：
+  Firstly,we consider several distributed cooperative algorithms motivated by energy management, such as state estimation for smart grids and economic dispatch for Energy Internet. Then we analyze convergence of distributed parameter estimation algorithms with random observation matrices and communication graphs by a network of multiple nodes via information exchange. Finally we prove that if the communication topology of the Energy Internet contains a spanning tree with the energy router as the root and there is a path from each intelligent control unit to the ER, then the estimated electricity price of the distribution system converges to its real value and the energy router achieves optimal asymptotically.
+报告人简历：
+  李韬，上海市东方学者特聘教授，华东师范大学数学科学学院教授、智能数学系主任，上海国家应用数学中心随机控制与信息-物理-能源系统应用研究团队负责人。主要研究方向为随机系统与控制、分布式学习、控制与博弈。曾主持国家自然科学基金优秀青年科学基金，入选2017教育部青年知名学者，曾获第7届亚洲控制会议最佳论文、第28届张嗣瀛优秀青年论文、中国自动化学会2017自然科学二等奖(第一完成人)等奖项。担任Systems and Control Letters、IFAC Nonlinear Analysis: Hybrid Systems、IEEE Control Systems Letters、SCIENCE CHINA Information Sciences等期刊的责任编委。
+ 欢迎感兴趣的师生参加！
+
+                                                　数学与统计学院
+                                              　2022年12月11日
+（本文更新于2022/12/11 22:26:00）

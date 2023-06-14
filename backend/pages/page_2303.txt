@@ -1,0 +1,12 @@
+[url]: http://www1.szu.edu.cn/board/view.asp?id=484589
+学术报告8：Aggregation induced optical properties of metal...
+微纳光电子学研究院　2022/11/18 14:52:00
+  讲座题目：Aggregation induced optical properties of metal nanoparticles for biomedical applications
+主讲人：徐清华，Department of Chemistry, National University of Singapore
+讲座时间：2022年11月23日（星期三）下午15:00-16:00
+讲座地点：#腾讯会议：106-110-321
+讲座摘要：Noble metal nanoparticles (NPs) have been known to display unique localized surface plasmon resonance (LSPR) property, which could be utilized to significantly enhance optical responses of metal NPs themselves and nearby chromophores, such as Surface enhanced Raman scattering (SERS), metal enhanced fluorescence and Plasmon enhanced nonlinear optical (NLO) responses. In this talk, I will present our group’s efforts on aggregation induced optical properties (photothermal effects and emission) of metal nanoparticles for biomedical applications. Taking advantages of giant local electric amplification of plasmon coupled nanostructures, we have developed a new type of AIE based on aggregation of metal-chromophore conjugates. The working principle of this new AIE scheme is based on aggregation induced plasmon coupling of metal NPs that help to enhance the excitation efficiency and emission quantum yield at the same time. We have further developed photosensitizer conjugated gold NPs that display significantly enhanced fluorescence, singlet oxygen generation and photothermal response, which allow applications for multimodal imaging and synergistic photothermal and photodynamic cancer therapy.
+个人简介: 
+Qing-Hua Xu received his B.S. from Zhejiang University (1993), M.S. from Peking University (1996) and University of Chicago (1997), and Ph.D. from UC Berkeley (2001). He conducted the postdoctoral research at Stanford University (2001-2002) and UC Santa Barbara (2002-2005). He joined NUS Chemistry in 2005 and became a tenured Associate Professor since 2011. His primary research interests focus on optical responses and dynamical processes of novel low-dimensional materials as well as their applications in biomedicine, optoelectronics, energy, and environmental areas. His research spans a broad range from materials preparation to practical applications as well as fundamental studies by using single particle spectroscopy and femtosecond time-resolved spectroscopy and microscopy. So far, he has published ~240 peer-reviewed articles with total citations of ~16,000 times and H-index of 75 (Google scholar).
+
+（本文更新于2022/11/18 14:52:00）

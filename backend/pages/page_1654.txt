@@ -1,0 +1,24 @@
+[url]: http://www1.szu.edu.cn/board/view.asp?id=484875
+计算机与软件学院“创新领航讲座”第五讲： "ILL-Posed" Computer Vision Tasks
+计算机与软件学院　2022/11/23 10:16:00
+  主 题： "ILL-Posed" Computer Vision Tasks
+时　间：2022年11月26日（周六）4:00pm-5:00pm
+地　点：致腾楼一楼报告厅（南区计算机报告厅）
+主讲人简介：
+操晓春，中山大学网络空间安全学院院长，国家杰出青年青年科学基金获得者，主要从事计算机视觉基础研究和网络空间内容安全应用研究。担任IEEE汇刊 TIP/TMM/电子学报编委，NeurIPS/ICCV/CVPR/IJCAI/AAAI/ICPR Area Chairs。获2019年中共中央办公厅技术进步一等奖（排名第1）。中国计算机学会优博、中国电子学会优博、中国科学院大学优博指导导师。
+主题简介：
+Computer vision tasks range from the simple perspective projection matrix estimation in a traditional camera calibration application to the large-scale foundation model fitting in a contemporary object detection cloud service. One may solve most computer vision tasks through fitting functions mapping the dense, if not continuous due to quantization, visual input to a discrete and meaningful output space, including categories, bounding boxes, and depths. Due to the significant difference in cardinalities of the domain and codomain, these mapping functions fail to meet one of the three Hadamard criteria for being well-posed. In other words, the unstable computer vision solution does not depend continuously on the parameters or input data. Many researchers are trying their best to design or learn computer vision algorithms being sufficiently robust to complex perturbations such as occlusion, smoke, rain, and fog. There are also scholars looking for dedicated but powerful adversarial perturbations. Does there exist an invariant backdoor perturbation that is capable to push an arbitrary image across the decision boundary in a classification task? Are all perturbations adversarial？
+In this talk, I will introduce these questions our team is exploring and briefly outline some of the progress. However, much still remains unclear in spite of our efforts, and we reiterate that there might not have the answers we're looking for before AI undergoes a brand new paradigm shift.
+实体课堂报名方法及要求：
+1、在内部网办事大厅“领航讲座”APP报名，报名时间：11月23日19:00-11月25日12:00，先报先得，报满即止。操作指南详见附件“领航讲座系统操作指南”。
+2、报名成功系统后请于线下完成签到，未签到的同学视为未到课堂听讲。报名成功后可取消报名，取消报名规则如下：
+（1）已报名成功的同学，在报名截止6个小时内可以取消报名，可再重报。
+（2）已报名成功，但是在报名截止6小时以上取消，释放名额的，不做处理。
+（3）已报名成功，但是在报名截止6小时内取消的，取消下一周的报名资格，一周过后可继续报名。
+（4）已报名成功，未按时签到，取消接下来两周报名资格，两周过后可继续报名。
+（5）已成功报名两次并有两次听讲记录的同学，提示“已报名两次，请留意在报名截止6小时内是否还有名额”。在报名截止6个小时内仍未报满的情况下可报名成功。
+3、请同学们认真听讲，遵守课堂纪律，感谢配合！
+欢迎感兴趣的学生踊跃报名参加，期待“领航讲座”领航你的大学生活。
+ 附件：
+·创新领航讲座系统操作指南（学生）.docx
+（本文更新于2022/11/23 10:16:00）

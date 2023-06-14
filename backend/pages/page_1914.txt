@@ -1,0 +1,17 @@
+[url]: http://www1.szu.edu.cn/board/view.asp?id=474600
+深大金融科技学院“商学思享Seminar”
+金融科技学院　2022/6/21 14:44:00
+ 
+主讲人/Speaker： Halis Sak 助理教授，深大微众银行金融科技学院
+时  间/Date &Time：2022年6月24日（周五）上午11:15 -12:15
+地点/Location：深圳大学粤海校区汇星楼五楼金融科技学院560会议室
+线上会议/Online meeting: 腾讯会议，会议号：514-141-810
+主 题/Title：Machine Learning for Empirical Asset Pricing
+内容简介/ Abstract：
+Over the years, top journals have published hundreds of characteristics to explain stock return, but many have lost significance. What fundamentally affects the time-varying significance of characteristics that survive? We combine machine-learning (ML) and portfolio analysis to uncover patterns in significant characteristics. From out-of- sample portfolio analysis, we back out important characteristics that ML models uncover. The ML portfolio’s exposure alternates between investor arbitrage constraint and firm financial constraint characteristics, the timing of which aligns with credit contraction and expansion states.
+
+In the first part of the presentation, summarize some of the papers on this topic while explaining my working paper outlined above. In the second part, show how to use Wharton Research Data Services cloud computing environment.
+
+嘉宾介绍：
+Halis Sak is an Assistant Professor at WeBank Institute of Fintech, Shenzhen University. His research and teaching address machine learning, empirical asset pricing, risk management, and Monte Carlo simulation. His academic works appeared in journals such as Review of Finance, Quantitative Finance, and European Journal of Operational Research.
+（本文更新于2022/6/21 14:45:00）

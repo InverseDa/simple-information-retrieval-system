@@ -1,0 +1,14 @@
+[url]: http://www1.szu.edu.cn/board/view.asp?id=484720
+物理与光电工程学院钱正芳教授团队在光电功能材料与器件方面发表系列重要研究成果
+物理与光电工程学院　2022/11/21 15:41:00
+     “碳达峰、碳中和”是国家战略性重点发展方向。围绕“双碳”目标，最近，深圳大学钱正芳教授团队在光电功能材料与器件领域取得了一系列原创性的研究成果，具体如下：
+（1）针对新一代储能材料锌电极和电解质界面的副反应和枝晶生长的问题。我们发现，相比于亲水性有机共溶剂，在传统水系电解液中引入疏水性碳酸酯共溶剂更能有效地解决锌负极不稳定问题。该成果以题为“Aqueous Electrolytes with Hydrophobic Organic Cosolvents for Stabilizing Zinc Metal Anodes”发表在国际知名期刊ACS Nano上，论文的第一作者为苗立成博士，通讯作者分别为钱正芳教授团队青年教师王任衡博士和河北大学张宁教授。该工作提出疏水性有机共溶剂能够实现高度可逆的金属锌负极。此外，组装的Zn||V2O5·nH2O全电池可实现高达5000次耐久性循环。
+图1. 疏水性碳酸酯类共溶剂稳定金属锌负极的作用机理（ACS Nano, 2022, 16, 9667-9678；IF: 18.027，中科院一区TOP期刊）
+进一步的，在基于醚类共溶剂抑制水系电解液的析氢副反应，以此提升锌负极的循环稳定性，我们在国际知名期刊Energy Storage Materials上发表了题为“Three-functional ether-based co-solvents for suppressing water-induced parasitic reactions in aqueous Zn-ion batteries”的研究论文上，论文的第一作者为苗立成博士，通讯作者分别为钱正芳教授团队青年教师王任衡博士和湖南大学朱智强教授。这项工作为水系锌离子电池低成本、高性能有机/水混合电解液的设计提供了参考依据。
+图2 Zn||PANI/CF全电池在纯水电解液以及1m G4电解液种的电化学性能（Energy Storage Materials, 2022, 49, 445-453; IF: 20.831，中科院一区TOP期刊）
+（2）通过简单的退火对商业化泡沫铜进行氧化亲锂改性，精准调控产物中CuO及Cu2O的比例及集流体的形貌，进一步通过熔融法制备复合金属锂负极。该电极制备方法简单、可批量化，成功应用于正极为LiFePO4的扣式及软包电池，表现出优异的循环性能及安全性能。研究成果以“Facile and scalable fabrication of lithiophilic CuxO enables stable lithium metal anode”为题发表在中国科技期刊卓越行动计划重点期刊Journal of Energy Chemistry。论文的第一作者为聂艳媚博士，通讯作者为钱正芳教授团队青年教师王任衡博士。
+图3 （a）、（b）Li@CuxO-7、Li@Cu和金属锂的时间电压曲线，（c）、（d）Li@CuxO-7电极与金属锂在LFP全电池中的电化学性能，（e）不同三维集流体对称电池循环性能比较。（Journal of Energy Chemistry, 2022, 16, 9667-9678; IF: 13.599，中科院一区TOP期刊）
+（3）基于三嗪作为核心，通过溶剂热缩合，分别以噻唑并[5,4-d]噻唑和亚胺为键成合成了TzTz TA CMP和TTI COF。该研究成果以“Tuning the Photocatalytic Activity through Linkages of Porous Conjugated Polymers Based on Triazines for a Selective Oxidation Reaction”为题发表在Adv. Energy Sustainability Res.（Advanced Science的姊妹刊）。研究发现，TTI在形态学上表现出优异的性能，同时，TzTz TA由于突出的光电特性和合适的还原潜力，对蓝光驱动的整体亚胺表现出最佳的光催化活性。本设计方法在分子水平上通过改变键来调整电子和光学性质可以用于其他用于生物氧化的2D光催化剂。论文第一作者为硕士生王月欣，通讯作者分别为深圳大学钱正芳教授团队青年教师王任衡博士和武汉大学郎贤军教授。
+图4 TTI COF和TzTz TA CMP的合成示意图（Adv. Energy Sustainability Res. 2022, 2200129；Advanced Science的姊妹刊）
+上述研究工作得到了国家自然科学基金(51804199)、科技部重点研发计划(2019YFB2204500)、广东省自然科学基金(2019A1515012111)、深圳市孔雀创新团队项目(KQTD20180412181422399)、深圳市面上项目(JCYJ20190808173815205)等支持。
+（本文更新于2022/11/22 8:45:00）

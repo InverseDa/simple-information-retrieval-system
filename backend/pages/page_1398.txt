@@ -1,0 +1,19 @@
+[url]: http://www1.szu.edu.cn/board/view.asp?id=485822
+学术报告九十四：Weak limit of normalized measures for....
+数学与统计学院　2022/12/1 10:53:00
+  数学与统计学院学术报告[2022] 094号
+(高水平大学建设系列报告761号)
+报告题目: Weak limit of normalized measures for Askey-Wilson polynomials and other q-polynomials
+报告人：汪翔升 （路易斯安那大学拉法叶分校）
+报告时间：2022年12月2日  10:00-11:00
+报告地点：腾讯会议：647 908 047
+报告内容：
+We consider the weak limit of the normalized measures for the Askey-Wilson polynomials and some other q-orthogonal polynomials when the parameter q approaches -1 from the right. We use two different methods to prove that the limit is a discrete measure on two mass points that are symmetric about the origin. The weights on these two points are, however, not always the same. We also calculate the weak limit of q-ultraspherical measure when q approaches a complex root of unity.
+ 报告人简历：
+汪翔升毕业于香港城市大学和中国科学技术大学联合高等研究中心。他的研究兴趣包括渐近分析和生物数学等交叉学术领域，最近五年在Adv. Math., Anal. Appl., J. Differential Equations, J. Math. Pures. Appl., Proc. Amer. Math. Soc., Stud. Appl. Math.等杂志上发表论文三十余篇。
+
+欢迎感兴趣的师生参加！
+
+                                       数学与统计学院
+                                              　2022年12月1日
+（本文更新于2022/12/1 10:53:00）

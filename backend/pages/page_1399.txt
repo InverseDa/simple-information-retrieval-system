@@ -1,0 +1,18 @@
+[url]: http://www1.szu.edu.cn/board/view.asp?id=485821
+学术报告九十三：Gap probability of the higher order Airy processes..
+数学与统计学院　2022/12/1 10:51:00
+  数学与统计学院学术报告[2022] 093号
+(高水平大学建设系列报告760号)
+报告题目: Gap probability of the higher order Airy processes and Painleve II hierarchy
+报告人：徐帅侠 （中山大学）
+报告时间：2022年12月2日9:00-  10:00
+报告地点： 腾讯会议647 908 047
+报告内容：
+ In this talk, we will study the one-parameter family of determinants of the higher order generalization of the Airy kernel. This family of determinants represents a new universal class of distributions, which are higher order analogues of the classical Tracy-Widom distribution.  The determinants can be expressed  in terms of integrals of  solutions of the Painlev\'{e}  II hierarchy. Using the Riemann-Hilbert method, we derive the large gap asymptotics of the determinants up to and including the explicit computation of the constant term with the parameter in (0,1). The singular type asymptotics of the determinants and the associated solutions of the Painlev\'{e} II hierarchy  are also obtained when the parameter is bigger than 1. This talk is based on joint work with Yifan Hao, Jun Xia, Lun Zhang and Yuqiu Zhao.
+ 报告人简历：
+报告人简介：徐帅侠，中山大学教授，博士生导师，研究方向为随机矩阵理论、潘勒韦方程、正交多项式和渐近分析。主持国家自然科学基金面上项目和广东省杰出青年基金项目等课题。相关结果发表于Adv. Math.、Comm. Math. Phys.和SIAM JMA等期刊。
+ 欢迎感兴趣的师生参加！
+
+                                           数学与统计学院
+ 2022年12月1日
+（本文更新于2022/12/1 10:51:00）

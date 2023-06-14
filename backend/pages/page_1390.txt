@@ -1,0 +1,18 @@
+[url]: http://www1.szu.edu.cn/board/view.asp?id=486254
+学术报告九十九： Stability judgement and accurate simulation of....
+数学与统计学院　2022/12/6 14:36:00
+  数学与统计学院学术报告[2022] 099号
+(高水平大学建设系列报告766号)
+报告题目: Stability judgement and accurate simulation of stochastic systems with discrete time feedbacks and applications
+报告人：邓飞其(华南理工大学 自动化与控制学院)
+报告时间：2022.12.9　 上午 　 10: 30 - 11: 30
+直播平台及链接： 腾讯会议 439-460-858  　　　　　　　　　　　　　　　　 
+报告内容：
+  The talk is concerned with some essential features of stochastic control systems with sampled data based (SCSwSDs). Firstly it is shown by two propositions that the moment asymptotic stability of the underlying system is equivalent to that of any regular accurate numerical scheme under simple conditions.This kind of principle provides a way for inferring moment asymptotic stability of SCSwSDs by numerical simulations logically. The accurate scheme construction procedure is introduced in a general framework.It is found that stochastic systems may be stabilized in appointed time by sampled data based control (SDBC). The restriction to the upper bound of the sampling period is confirmed by the way. The concepts of accurate numerical computation and simulation (ANCS) are proposed. A distinctive character, SDBC-only in short, for SDBC is reported and studied preliminarily based on ANCS and the equivalence propositions. Some important remarks are given as further analyses on some related issues. Finally, three numerical examples are given to illustrate the applications of the theoretical results of the work.
+报告人简历：
+ 邓飞其，华南理工大学教授、博士生导师。他目前是IEEE高级成员、中国自动化协会（CAA）控制理论技术委员会（TCCT）成员，现任IEEE CSS广州分会主席、TCCT随机系统控制技术委员会主任、《华南理工大学学报》副主编，《IEEE Access》、《AIMS Mathematics》和《控制理论与应用》等杂志的编辑委员会成员。他的主要研究方向包括时滞系统、非线性系统和随机系统的稳定性、镇定与鲁棒控制理论。到目前为止，他已经在《IEEE Transactions on Automatic Control》、《Automatica》、《SIAM Journal of Control and Optimization》与《Systems & Control Letters》等期刊发表论文300多篇。
+ 欢迎感兴趣的师生参加！
+
+ 数学与统计学院
+  2022年12月6日
+（本文更新于2022/12/6 14:36:00）

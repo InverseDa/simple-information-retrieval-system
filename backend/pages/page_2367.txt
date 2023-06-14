@@ -1,0 +1,7 @@
+[url]: http://www1.szu.edu.cn/board/view.asp?id=480659
+大数据国家工程实验室罗成文老师获ACM SIGMOBILE China新星奖
+大数据系统计算技术国家工程实验室　2022/9/29 17:22:00
+         近日，ACM SIGMOBILE China 2022年度新星奖公布了评奖结果，深圳大学大数据系统计算技术国家工程实验室罗成文副教授获新星奖。
+       “ACM SIGMOBILE China新星奖”是由ACM中国理事会授权ACM SIGMOBILE China分会设立的奖项，目的是为表彰国内移动计算与无线网络领域的青年学者和博士研究生所取得的科研成绩，进一步推动青年学者和博士研究生的学术发展和进步。ACM（Association for Computing Machinery，国际计算机协会）是现时全球规模最大的计算机领域学术组织，ACM SIGMOBILE（Special Interest Group on on Mobility of Systems, Users, Data and Computing）是ACM所属的致力于移动计算领域的专业分会，专注于移动计算、无线网络、可穿戴计算等。ACM SIGMOBILE旗下组织众多计算机网络领域顶级会议，如MobiCom、MobiSys、SenSys、MobiHoc等。
+       罗成文，副教授，深圳大学大数据系统计算技术国家工程实验室主任助理，新加坡国立大学博士，深圳大学计算机与软件学院网络与大数据系副系主任。在计算机网络领域高水平国际期刊或会议如IEEE TMC、IEEE/ACM ToN、IEEE INFOCOM、ACM UbiComp、ACM SenSys、IEEE/ACM IPSN等发表论文多篇。主持国家自然科学基金、广东省自然科学基金等科研项目。科研成果获吴文俊人工智能科技进步奖一等奖、中国自动化学会科技进步奖一等奖、广东省计算机学会优秀论文奖一等奖等奖项。担任ACM Computing Surveys等国际学术期刊编委，任CCF互联网专委会执行委员，CCF物联网专委会执行委员等。
+（本文更新于2022/9/30 14:14:00）

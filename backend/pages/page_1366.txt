@@ -1,0 +1,18 @@
+[url]: http://www1.szu.edu.cn/board/view.asp?id=486934
+学术报告一百零三：Stabilization in Distribution of Hybrid Systems....
+数学与统计学院　2022/12/16 23:08:00
+  数学与统计学院学术报告[2022] 103号
+(高水平大学建设系列报告770号)
+报告题目: Stabilization in Distribution of Hybrid Systems by Intermittent Noise
+报告人：胡军浩（中南民族大学数学与统计学学院）
+报告时间：2022.12.19上午 10: 00 - 11: 00
+直播平台及链接： 腾讯会议：812-455-470                                           
+报告内容：
+  For many stochastic hybrid systems in the real world, it is inappropriate to study if their solutions will converge to an equilibrium state (say, 0 by default) but more appropriate to discuss if the probability distributions of the solutions will converge to a stationary distribution. The former is known as the asymptotic  stability of the equilibrium state while the latter the stability in distribution.This article aims to determine whether or not a stochastic state feedback control can make a given nonlinear hybrid differential equation, which is not stable in distribution, to become stable in distribution. We will refer to this problem as stabilisation in distribution by noise or stochastic stabilisation in distribution.
+报告人简历：
+  胡军浩,现为中南民族大学数学与统计学学院院长，硕士生导师。2007年毕业于华中科技大学，获理学博士学位。2008年至2010年, 在华中科技大学从事博士后研究。 2011年至2012年, 在英国Strathclyde大学和Swansea大学从事博士后研究。2014年被中南民族大学聘为教授。主要研究领域为随机系统理论与应用，动力系统。主持国家自然科学基金面上项目、国家自然科学基金青年项目、湖北省自然科学基金、国家博士后基金和中南民族大学校科研项目等，参加国家自然科学基金重点项目。已在国内外学术期刊上发表论文50余篇。获得湖北省自然科学奖（三等奖）。
+
+欢迎感兴趣的师生参加！
+                                         数学与统计学院
+                                              　2022年12月16日
+（本文更新于2022/12/16 23:08:00）

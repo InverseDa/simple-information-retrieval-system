@@ -1,0 +1,17 @@
+[url]: http://www1.szu.edu.cn/board/view.asp?id=485275
+2022年物理与光电工程学院高水平学术报告32：拓扑模型中静态分数电荷的输运测量
+物理与光电工程学院　2022/11/25 11:25:00
+  报告人：江华教授，苏州大学
+邀请人：王健教授
+报告时间：2022年11月25日星期五 下午2:30
+报告形式：腾讯会议
+会议链接：https://meeting.tencent.com/dm/GImxO5pQ4aTJ
+会议号：828-890-973
+入会密码：1007
+
+Abstract: 
+The static topological fractional charge (TFC) in condensed matter systems is related to the band topology and thus has potential applications in topological quantum computation. However, the experimental measurement of these TFCs in electronic systems is quite challenging. We propose an electronic transport measurement scheme that both the charge amount and the spatial distribution of the TFC can be extracted from the differential conductance through a quantum dot coupled to the topological system being measured. For one-dimensional Su-Schrieffer-Heeger (SSH) model, both the e/2 charge of the TFC and its distribution can be verified. We also show that the Anderson disorder effect, which breaks certain symmetry related to the TFC, is significant in higher-dimensional systems while has little effect on the one-dimensional SSH chain. Nonetheless, our measurement scheme can still work well for specific higher-order topological insulator materials, for instance, the 2e/3 TFC in the breathing kagome model could be confirmed even in the presence of disorder effect.
+ 报告人简介: 
+江华教授，2005年本科毕业于南京大学，2010年于中国科学院物理研究所获博士学位。2010-2012年在北京大学量子材料科学中心从事博士后研究工作。2013年加入苏州大学，现任苏州大学物理科学与技术学院和苏州大学高等研究院教授、博士生导师。长期从事量子材料输运特性的理论研究，已在物理学重要期刊发表学术论文100余篇，包括Phys. Rev. Lett. 15篇， Phys. Rev. B 57篇，曾获国家自然科学基金优秀青年基金等项目资助。
+ 欢迎各位老师和同学参加!
+  （本文更新于2022/11/25 11:25:00）

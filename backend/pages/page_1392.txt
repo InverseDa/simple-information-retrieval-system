@@ -1,0 +1,16 @@
+[url]: http://www1.szu.edu.cn/board/view.asp?id=486250
+学术报告九十七：A geometric model of perfect derived categories of..
+数学与统计学院　2022/12/6 14:25:00
+  数学与统计学院学术报告[2022] 097号
+(高水平大学建设系列报告764号)
+报告题目: A geometric model of perfect derived categories of non-positive graded skew-gentle algebras
+报告人：周宇 助理教授  （清华大学）
+报告时间：2022年12月7日，10:00-11:00
+报告地点： 腾讯会议ID 187-379-101                              
+报告内容：
+  For any non-positive graded skew-gentle algebra, there is an associated graded punctured marked surface, such that the indecomposable objects in its perfect derived category can be realized by the graded curves with local system on the surface. Moreover, the oriented intersections of two tagged graded curves give rise to a basis of the morphism space between the corresponding objects. This is a joint work with Yu Qiu and Chao Zhang
+ 报告人简历：
+  周宇，清华大学丘成桐数学科学中心助理教授，主要从事代数表示论方向的研究。2013年博士毕业于清华大学，先后在挪威科技大学、德国比勒菲尔德大学做博士后研究工作。目前已经在Adv. Math.,Compositio Math.,Int. Math. Res. Notices (IMRN)，J. London Math. Soc.,Trans. AMS等国际数学一流杂志上发表十多篇高水平学术论文。
+ 　　　　　　　　　　　　　　　　　　　　　　　　　 数学与统计学院
+  2022年12月06日
+（本文更新于2022/12/6 14:25:00）

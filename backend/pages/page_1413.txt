@@ -1,0 +1,19 @@
+[url]: http://www1.szu.edu.cn/board/view.asp?id=486503
+2022年物理与光电工程学院高水平学术报告35:利用非对角的Bethe ansatz方法求解量子可积模型
+物理与光电工程学院　2022/12/12 9:14:00
+  报告题目：Off-diagonal Bethe ansatz approach to quantum integrable models 
+报告人：杨文力（西北大学物理学院教授）
+邀请人：李朝红教授
+时　间：2022/12/16 10:00
+讲座形式：腾讯会议
+会议链接：https://meeting.tencent.com/dm/IrIRYGdhibWm
+会议号：324-347-687
+会议密码：2416
+
+报告摘要：
+Applying the recent developed method-the off-diagonal Bethe ansatz method, we construct the exact solutions of the Heisenberg spin chain with various boundary conditions. The results allows us to calculate the boundary energy of the system in the thermo dynamic limit. The method used here can be generalized to study the thermodynamic properties and boundary energy of other high rank models with non-diagonal boundary fields.
+
+报告人简介：
+杨文力，西北大学物理学院教授、博士生导师。现为中国物理学会常务理事，全国凝聚态理论和统计物理专业委员会委员。1990年本科毕业于西安交通大学，1996年于西北大学获得博士学位，曾在德国波恩大学、日本京都大学、澳大利亚昆士兰大学等访问工作。主要从事经典和量子场论、可积系统及相关对称代数等数学物理领域的研究。2009年入选首届陕西省“百人计划”，2014年获得国家杰出青年基金资助,2015年入选教育部长江特聘教授。其成果曾获2010年度教育部自然科学二等奖，2012年度陕西省科学技术一等奖。
+ 欢迎各位老师和同学参加!
+（本文更新于2022/12/12 9:14:00）

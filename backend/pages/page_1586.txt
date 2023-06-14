@@ -1,0 +1,15 @@
+[url]: http://www1.szu.edu.cn/board/view.asp?id=485344
+材料学院学术报告二十：Large scale atomistic TCAD simulations
+材料学院　2022/11/25 16:56:00
+  报告主题：Large scale atomistic TCAD simulations
+报告嘉宾：汪林望（中国科学院半导体研究所，首席科学家）
+时    　间：2022年11月29日（周二）下午15：30
+地      　点：腾讯会议：697-640-302
+报告人简介
+汪林望博士于1985年获上海交通大学物理学学士学位，1991年获康奈尔大学物理学博士学位，汪林望博士曾在美国劳伦斯伯克利国家实验室工作22年，并担任资深科学家，于2021年正式退休回国。2022年被中国科学院半导体研究所以百人A（帅才）计划引进，现为半导体研究所首席科学家，同时也是龙讯旷腾首席顾问。 汪林望博士主要从事的研究领域有：计算物理学、计算材料科学、纳米材料科学，以及能源材料科学等。至今共发表SCI论文400余篇，包括9篇Science和Nature，60余篇PRL、JACS、Nano Lett.。论文总引用次数达33000余次，H-index 90。在计算方法和跨尺度材料计算领域 已发展了十多种算法和程序，如现已广泛使用的Petot、Escan、LCBB、LS3DF等。汪林望博士于2008年获得戈登贝尔奖（首位华人），是大规模从头计算领域的领军人物，也是第一性原理计算方法发展的第一位中国人。
+报告内容简介
+As the device size shrinks to nanosize scale, the quantum mechanical effect and atomic level fluctuations become important. The traditional TCAD based on continuous model will not longer work. There is a urge for atomic TCAD development. In this talk, I will discuss our effort for atomic TCAD development, especially for large scale 1000 atom calculations. Instead of using the traditional NEGF formalism, we will use the scattering state calculations. We will also have DFT level self-consistent calculations for the insulating layer, which is important when we like to include the defect and single atom effects. Finally, I will also talk about our efforts for thin film growth simulations based on machine learning force fields.
+ 欢迎有兴趣的师生前来参加！
+ 深圳大学材料学院
+2022年11月25日
+（本文更新于2022/11/25 16:56:00）

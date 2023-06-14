@@ -1,0 +1,9 @@
+[url]: http://www1.szu.edu.cn/board/view.asp?id=484349
+学术报告7：Luminescent nanoparticles: a wonderful toolbox for...
+微纳光电子学研究院　2022/11/16 14:33:00
+  讲座题目：Luminescent nanoparticles: a wonderful toolbox for imaging and assistive technologies
+主讲人：刘小钢教授，Department of Chemistry, National University of Singapore
+讲座时间：2022年11月21日（星期一）下午15:00-16:00
+讲座地点：腾讯会议【线上会议号：307-630-127】
+ 讲座摘要：Lanthanide-doped luminescent nanoparticles enable anti-Stokes emission via nonlinear processes, where low energy excitation photons in the near-infrared window can be upconverted into high-energy emission ones in the visible or ultraviolet regions. The past decade has seen great success in the high-quality synthesis of luminescent nanoparticles with controlled structure, crystalline phase, size, and shape. The unique capacity of upconversion nanocrystals to undertake near-infrared excitation, amalgamated with their excellent luminescent characteristics, such as massive anti-Stokes spectral shift, sharp emission band, multicolor emission, and long luminescence lifetime, makes these nanomaterials prime candidates for a plethora of applications. Herein, we present luminescent nanoparticles from the perspective of fundamental luminescence mechanisms, describe new synthetic routes for expanding the chemist’s repertoire, and summarize current practical approaches to tuning emission color and enhancing upconversion efficiency. In particular, we highlight the recent advances in utilizing luminescent nanocrystals for bioimaging, therapy, biosensing, neuroscience, super-resolution imaging, photoswitching, and lasing applications. We also discuss the key challenges and issues that are critical for the further implementation of luminescent nanoparticles in diverse settings.
+（本文更新于2022/11/16 14:33:00）

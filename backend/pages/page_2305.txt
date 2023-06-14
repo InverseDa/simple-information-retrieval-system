@@ -1,0 +1,11 @@
+[url]: http://www1.szu.edu.cn/board/view.asp?id=484187
+学术报告6：Tailoring the carrier dynamics in metal-halide...
+微纳光电子学研究院　2022/11/14 16:48:00
+  讲座题目：Tailoring the carrier dynamics in metal-halide perovskites for light emission applications
+主讲人：邢贵川，Institute of Applied Physics and Materials Engineering, University of Macau
+讲座时间：2022年11月17日（星期四）下午16:30-17:30
+讲座地点：腾讯会议线上会议号342-289-938
+讲座摘要：The development of high-efficiency, stable and low-cost luminescent materials and devices is one of the most effective ways to achieve efficient use of energy, and is an important guarantee for our country's transition to a low-carbon economy. Metal-halide perovskites possess the advantages of both inorganic and organic materials, and have great potential for low-cost, large-area, flexible display and lighting applications. The core of the work of perovskite light-emitting devices is the carrier dynamics of the functional layer under the driving of electric/optical field. Therefore, the detection, understanding and manipulation the carrier dynamics in perovskite by tailoring the materials’ dimensionality and size are the key scientific issues in this field. In this report, we’ll introduce our recent discoveries on the excellent luminescent properties of metal-halide perovskites, the detection and regulation of carrier dynamics, research works on performance optimization of light-emitting devices and development of new luminescent applications.
+Tailoring the dimensionality of metal-halide perovskite for laser pulse doubling
+个人简介：邢贵川教授任职于澳门大学应用物理及材料工程学院。他于2011年博士毕业于新加坡国立大学物理系，获得博士学位；2009-2016年在新加坡南洋理工大学从事博士后研究；2016年8月加入澳门大学。主要从事非线性光学与超快光谱学研究，聚焦于纳米光电子、钙钛矿用于能源获取及钙钛矿发光。
+（本文更新于2022/11/14 16:48:00）

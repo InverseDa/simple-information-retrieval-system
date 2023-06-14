@@ -1,0 +1,13 @@
+[url]: http://www1.szu.edu.cn/board/view.asp?id=474072
+深大金融科技学院“商学思享Seminar”
+金融科技学院　2022/6/14 9:51:00
+  主讲人/Speaker： 郑毓盛 教授，香港浸会大学，经济系
+时　间/Date &Time：2022年6月16日（周四）14:30 -16:30 
+线上会议/Online meeting: 腾讯会议，会议号：162-666-432
+主 题/Title：Trade policy and energy decarbonization - assessing the impact of the EU’s trade defense measures
+内容简介/ Abstract：
+Deployment of renewable energy is a crucial strategy for decarbonization. Many countries have adopted industrial policies to promote the growth of new industries for manufacturing renewable energy equipment. However, such policies may contradict the national and global goal of energy transition. This paper studies the nexus between solar energy adoption and trade policy in OECD countries for the period between 2011 and 2018. We treat the anti-dumping and anti-subsidy (ADAS) duties on Chinese manufactured solar PV panels imposed by the European Union in 2013 as a quasi-natural experiment for testing the impact of trade protection on energy transition.
+Using a difference-in-differences strategy, we find that the EU countries could have an additional expansion of about 0.31%-0.34% per annum in the share of solar energy in the electricity mix had they not imposed the duties during this period of time. This is significant as compared to their average annual increase of 0.14% in solar energy share during the same period of time. We also identify that the decrease in solar share in electricity production in the EU member states is due to their slower expansion of solar energy capacity as well as the decrease in their imports of solar-related equipment from China. This finding highlights the importance of trade policy to global energy transition and underpins the urgency of formulating proper trade rules for environmental goods.
+嘉宾介绍：
+郑毓盛教授任职于香港浸会大学经济系，并曾长期担任系主任。郑教授于澳大利亚阿德莱德大学获得经济学博士,是享誉国内外的中国经济问题研究专家。主要研究领域是中国经济、发展经济学与环境经济学,并在《经济研究》、《中国社会科学》、Economic Journal、Journal of Development Economics、China Economic Review、Energy Policy等中外知名杂志上发表论文数十篇。
+（本文更新于2022/6/14 9:51:00）

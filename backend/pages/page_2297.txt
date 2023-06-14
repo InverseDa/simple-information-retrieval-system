@@ -1,0 +1,10 @@
+[url]: http://www1.szu.edu.cn/board/view.asp?id=486913
+学术报告12：Exciton-Polariton
+微纳光电子学研究院　2022/12/16 16:08:00
+  讲座信息：“Exciton-Polariton”
+主讲嘉宾： Prof. Ji Wei　(季伟 教授) 新加坡国立大学物理系
+时　　间：2022年12月20日上午10：00-12：00
+地　　点：#腾讯会议：343-487-911
+ 报告简介：The review of a recent trend in exciton-polaritonics is presented. Among many challenges, the research on relevant materials is of paramount importance.  There has been a trend to focus on inorganic, organic, hybrid inorganic and organic, and biological materials. In particular, both perovskite and organic materials attract most of the attention. Realization of room-temperature exciton-polaritons in RhB-based metal-organic frameworks (MOFs) by our research group is discussed. These MOFs enable the demonstration of organic polariton lasing at room temperature, (which will be presented in Part II).
+ 嘉宾简介：Wei Ji received his PhD degree in Physics at Heriot-Watt University, Edinburgh, Scotland in 1986. After the experience of three-year post-doctor at the same university, he moved to National University of Singapore as Lecturer, Associate Professor, and Full Professor. 　He was the Vice Dean of Science Faculty, National University of Singapore for seven years. He was an Associate Editor of Optical Materials Express. 　His current research interests include nonlinear optical materials, especially low-dimensional semiconductors and organics, and their technological applications for optical switching, optical limiting, lasing, and optical detection.
+（本文更新于2022/12/16 16:08:00）
