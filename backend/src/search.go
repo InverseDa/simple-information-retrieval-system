@@ -23,6 +23,7 @@ type SearchEngine struct {
 	WordSet             map[string]bool         // 词集（用map构造set，比较简单的写法）
 	Terms               map[int][]string        // 每个文档ID的分词的结果
 	CosineSimilarityMap map[int]map[int]float64 // 两个文档之间的余弦相似度
+	tf_idf              map[int]map[string]float64
 	jieba               *gojieba.Jieba
 }
 
@@ -37,6 +38,7 @@ func InitializeSearchEngine(pagesDir string) *SearchEngine {
 	se := SearchEngine{}
 	se.ReadFile(dir + pagesDir)
 	se.BuildInvertedIndex()
+	se.TF_IDF_ForDocs()
 	return &se
 }
 
@@ -227,7 +229,7 @@ func (s *SearchEngine) ReadFile(pagesDir string) {
 }
 
 // 返回1. 文档的TF-IDF向量 2. Query的TF-IDF向量
-func (s *SearchEngine) TF_IDF(query string, queryWords []string) (map[int]map[string]float64, map[string]float64) {
+func (s *SearchEngine) TF_IDF_ForDocs() map[int]map[string]float64 {
 	// 先定义DF函数
 	df := func(word string) int {
 		cnt := 0
@@ -271,6 +273,11 @@ func (s *SearchEngine) TF_IDF(query string, queryWords []string) (map[int]map[st
 		}
 	}
 	// ==============================================================================================================
+
+	return tf_idf
+}
+
+func (s *SearchEngine) TF_IDF_ForQuery(query string, queryWords []string) map[string]float64 {
 	// 计算Query的TF-IDF
 	// query_idf := make(map[string]float64)
 	query_tf := make(map[string]float64)
@@ -280,15 +287,15 @@ func (s *SearchEngine) TF_IDF(query string, queryWords []string) (map[int]map[st
 	for index := range query_tf {
 		query_tf[index] /= float64(len(queryWords))
 	}
-	return tf_idf, query_tf
+	return query_tf
 }
 
 func (s *SearchEngine) CosineSimlarity(query string, queryWords []string) {
 	s.CosineSimilarityMap = make(map[int]map[int]float64)
 	s.CosineSimilarityMap[-1] = make(map[int]float64) // docId = -1 表示query
-	tf_idf, query_tf := s.TF_IDF(query, queryWords)
+	query_tf := s.TF_IDF_ForQuery(query, queryWords)
 	for docId := range s.Docs {
-		v1 := tf_idf[docId]
+		v1 := s.tf_idf[docId]
 		v2 := query_tf
 		v1Norm := 0.0
 		v2Norm := 0.0
