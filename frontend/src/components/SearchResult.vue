@@ -10,7 +10,7 @@
         @search="press"
       />
       <p v-if="listData.length !== 0" style="text-align: left">
-        搜索耗时：{{ 0.001 * searchTime.valueOf().toFixed(2) + "s" }}
+        搜索耗时：{{ (0.001 * searchTime).toFixed(3) + "s" }}
       </p>
       <p v-if="fuzzyData.length !== 0" style="text-align: left">
         您是不是在找：
