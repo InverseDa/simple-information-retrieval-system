@@ -229,7 +229,7 @@ func (s *SearchEngine) ReadFile(pagesDir string) {
 }
 
 // 返回 文档的TF-IDF向量
-func (s *SearchEngine) TF_IDF_ForDocs() map[int]map[string]float64 {
+func (s *SearchEngine) TF_IDF_ForDocs() {
 	// 先定义DF函数
 	df := func(word string) int {
 		cnt := 0
@@ -259,20 +259,19 @@ func (s *SearchEngine) TF_IDF_ForDocs() map[int]map[string]float64 {
 		idf[word] = math.Log10(float64(len(s.Docs)) / float64(df(word)))
 	}
 	// 计算文档的TF-IDF
-	tf_idf := make(map[int]map[string]float64)
+	s.tf_idf = make(map[int]map[string]float64)
 	for docId := range s.Docs {
-		tf_idf[docId] = make(map[string]float64)
+		s.tf_idf[docId] = make(map[string]float64)
 		for _, word := range s.Terms[docId] {
 			tf_val := tf(word, docId)
 			if tf_val == 0 {
-				tf_idf[docId][word] = 0
+				s.tf_idf[docId][word] = 0
 			} else {
 				abc := float64(tf_val) * idf[word]
-				tf_idf[docId][word] = abc
+				s.tf_idf[docId][word] = abc
 			}
 		}
 	}
-	return tf_idf
 }
 
 func (s *SearchEngine) TF_IDF_ForQuery(query string, queryWords []string) map[string]float64 {
